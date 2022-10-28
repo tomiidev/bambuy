@@ -3,71 +3,64 @@ import { FaCheck } from "react-icons/fa";
 
 const pricesmonth = [
     {
-        title: "PYME",
+        title: "LITE",
         price: 49,
-        currency: "PEN",
-        frecuency: "/ mensual",
-        description: "Todas las funciones necesarias para hacer crecer tu negocio.",
+        currency: "USD",
+        frecuency: "/ monthly",
+        description: "All the features you need to grow your business.",
         features: [
-            "Comprobantes ilimitados ∞",
-            "02 usuarios",
-            "01 almacén",
-            "Punto de venta",
-            "Clientes",
-            "Inventario",
-            "Reportes",
-            "App móvil",
+            "Unlimited vouchers ∞",
+            "02 users",
+            "Point of sale",
+            "Customers",
+            "Inventory",
+            "Reports",
         ],
-        cta: "Empieza Gratis",
+        cta: "Get started",
         mostPopular: false,
     },
 
     {
         title: "PRO",
         price: 69,
-        currency: "PEN",
-        frecuency: "/ mensual",
-        description: "Todas las funciones necesarias para hacer crecer tu negocio.",
+        currency: "USD",
+        frecuency: "/ monthly",
+        description: "All the features you need to grow your business.",
         features: [
-            "Comprobantes ilimitados ∞",
-            "04 usuarios",
-            "02 almacenes",
+            "Unlimited vouchers ∞",
+            "04 users",
+            "02 warehouses",
             "Dashboard",
-            "Punto de venta",
-            "Clientes",
-            "Inventario",
-            "Compras",
-            "Contabilidad",
-            "Guías de remisón",
-            "Reportes",
-            "App móvil",
+            "Point of sale",
+            "Inventory",
+            "Shopping",
+            "Accounting",
+            "Reports",
         ],
-        cta: "Empieza Gratis",
+        cta: "Get started",
         mostPopular: true,
     },
 
     {
-        title: "PLUS",
+        title: "PREMIUM",
         price: 99,
-        currency: "PEN",
-        frecuency: "/ mensual",
-        description: "Todas las funciones necesarias para hacer crecer tu negocio.",
+        currency: "USD",
+        frecuency: "/ monthly",
+        description: "All the features you need to grow your business.",
         features: [
-            "Comprobantes ilimitados ∞",
-            "06 usuarios",
-            "03 almacenes",
+            "Unlimited vouchers ∞",
+            "08 users",
+            "04 warehouses",
             "Dashboard",
-            "Punto de venta",
-            "Clientes",
-            "Inventario",
-            "Compras",
-            "Contabilidad",
-            "Guías de remisón",
-            "Reportes",
-            "Finanzas",
-            "App móvil",
+            "Point of sale",
+            "Inventory",
+            "Shopping",
+            "Accounting",
+            "Reports",
+            "Finance",
+            "mobile App",
         ],
-        cta: "Empieza Gratis",
+        cta: "Get started",
         mostPopular: false,
     },
 ];
@@ -77,12 +70,11 @@ export default function Prices() {
         <div className="bg-white" id="prices">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-16">
                 <h2 className="text-3xl font-bold text-center">
-                    Precios accesibles 💰
+                    Affordable prices 💰
                 </h2>
 
-                <p className="pt-4 text-lg text-center w-auto">
-                    Tenemos el plan perfecto para tu negocio, elige el plan que mejor se
-                    adapte.
+                <p className="pt-4 text-sm text-center w-auto">
+                    We have the perfect plan for your business, choose the plan that best suits you.
                 </p>
             </div>
 
@@ -90,14 +82,14 @@ export default function Prices() {
                 {pricesmonth.map((plan) => (
                     <div
                         key={plan.title}
-                        className="rounded-2xl border border-gray-100 shadow-lg p-8 relative flex flex-col"
+                        className="rounded-2xl border border-gray-200 shadow-lg p-8 relative flex flex-col"
                     >
                         <h3 className="text-lg font-bold leading-5">
                             {plan.title}
                         </h3>
                         {plan.mostPopular && (
                             <p className="absolute top-0 px-4 py-1 -translate-y-1/2 bg-rose-100 text-rose-500  rounded-full font-semibold tracking-wide shadow-md">
-                                Recomendado
+                                Recommended plan
                             </p>
                         )}
                         <p className="mt-4  leading-6">{plan.description}</p>
@@ -113,7 +105,7 @@ export default function Prices() {
                         <ul className="mt-6 space-y-4 flex-1">
                             {plan.features.map((feature) => (
                                 <li key={feature} className="leading-6 flex">
-                                    <FaCheck className="mt-1 text-rose-500 shrink-0" />
+                                    <FaCheck className="mt-2 w-3 h-3 text-rose-500 shrink-0" />
                                     <span className="ml-3">{feature}</span>
                                 </li>
                             ))}
@@ -123,7 +115,7 @@ export default function Prices() {
                             href="#"
                             className={`  mt-8 block px-6 py-4 text-sm font-semibold leading-4 text-center rounded-full ${plan.mostPopular
                                 ? "bg-rose-500 text-white shadow-md"
-                                : "bg-black text-white"}      
+                                : "bg-rose-100 text-rose-500"}      
                                       `}>
                             {plan.cta}
                         </Link>

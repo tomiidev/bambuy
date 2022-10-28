@@ -46,7 +46,7 @@ export default function Footer() {
             />
           </Link>
 
-          <p className="text-sm pt-6 w-auto sm:w-10/12 md:w-8/12 lg:w-10/12"><span className="text-rose-500 font-bold">Landing Page</span> dolor sit amet fuga tempora magnam fugiat dolorem quas consectetur, voluptates inventore amet dignissimos dicta.</p>
+          <p className="text-sm pt-6 w-auto sm:w-10/12 md:w-8/12 lg:w-10/12"><span className="text-rose-500 font-bold">Halley</span> is the sit amet fuga tempora magnam fugiat dolorem quas consectetur, voluptates inventore amet dignissimos dicta.</p>
 
           <div className="flex gap-2 pt-6 sm:pt-6 md:pt-6 lg:pt-12 max-w-[300px]">
             {social.map((red) => (
