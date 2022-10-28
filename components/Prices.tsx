@@ -73,7 +73,7 @@ export default function Prices() {
                     Affordable prices 💰
                 </h2>
 
-                <p className="pt-4 text-sm text-center w-auto">
+                <p className="pt-4 text-center w-auto">
                     We have the perfect plan for your business, choose the plan that best suits you.
                 </p>
             </div>
