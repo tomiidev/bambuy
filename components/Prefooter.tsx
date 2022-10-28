@@ -10,7 +10,7 @@ export default function Prefooter() {
 
             <div className="text-center pb-20">
                 <Link href="#">
-                    <button className="bg-rose-500 text-white rounded-full px-6 p-3 text-base font-medium">
+                    <button className="bg-rose-500 text-white rounded-full px-6 p-3 font-medium">
                         Get started
                     </button>
                 </Link>
