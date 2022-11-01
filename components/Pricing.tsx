@@ -74,7 +74,7 @@ export default function Pricing() {
                 </h2>
 
                 <p className="pt-6 text-base max-w-2xl text-center m-auto">
-                    We have the perfect plan for your business, choose the plan that best suits you, Dont just take our word for it. Try Halley free for 14 days.
+                    We have the perfect plan for your business, choose the plan that best suits you, Try Halley free for 14 days.
                 </p>
             </div>
 

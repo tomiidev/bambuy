@@ -21,8 +21,8 @@ interface Props {
 export default function Layout({ children, meta: pageMeta }: Props) {
   const router = useRouter();
   const meta = {
-    title: 'Welcome to Halley',
-    description: 'Description  halley page',
+    title: 'Halley',
+    description: 'Description halley page',
     cardImage: '/images/seo/cardimage.png',
     ...pageMeta
   };
