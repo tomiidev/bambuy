@@ -74,7 +74,7 @@ export default function Prices() {
                 </h2>
 
                 <p className="pt-6 text-base max-w-2xl text-center m-auto">
-                    We have the perfect plan for your business, choose the plan that best suits you, Don't just take our word for it. Try Halley free for 14 days.
+                    We have the perfect plan for your business, choose the plan that best suits you, Dont just take our word for it. Try Halley free for 14 days.
                 </p>
             </div>
 
@@ -82,9 +82,6 @@ export default function Prices() {
                 {pricesmonth.map((plan) => (
                     <div
                         key={plan.title}
-                        // other style
-                        //     className="rounded-2xl border border-gray-300 shadow-sm p-8 relative flex flex-col"
-                        // >
                         className={`rounded-2xl  shadow-sm p-8 relative flex flex-col ${plan.mostPopular
                             ? "border-rose-300 border-2 border-solid"
                             : "border-gray-300 border"}      
