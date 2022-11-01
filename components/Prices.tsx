@@ -69,12 +69,12 @@ export default function Prices() {
     return (
         <div className="bg-white" id="prices">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-16">
-                <h2 className="text-3xl font-bold text-center">
-                    Affordable prices
+                <h2 className="text-4xl font-bold text-center">
+                    Pricing
                 </h2>
 
-                <p className="pt-4 text-center w-auto">
-                    We have the perfect plan for your business, choose the plan that best suits you.
+                <p className="pt-6 text-base max-w-2xl text-center m-auto">
+                    We have the perfect plan for your business, choose the plan that best suits you, Don't just take our word for it. Try Halley free for 14 days.
                 </p>
             </div>
 

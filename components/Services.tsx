@@ -40,7 +40,7 @@ export function Services() {
           What is Halley?
         </h2>
 
-        <p className="pt-6 pb-12 text-lg max-w-2xl text-center m-auto">
+        <p className="pt-6 pb-6 text-base max-w-2xl text-center m-auto">
           Patreon is the best place for creators to build memberships by providing exclusive access to their work and a deeper connection with their communities.
         </p>
       </div>
@@ -59,8 +59,8 @@ export function Services() {
                 priority
               />
             </div>
-            <h2 className="font-bold text-xl text-center">{service.title}</h2>
-            <p className="text-lg pt-2 text-center">{service.description}</p>
+            <h2 className="font-bold text-lg text-center">{service.title}</h2>
+            <p className="text-base pt-2 text-center">{service.description}</p>
           </div>
         ))}
       </div>
