@@ -5,7 +5,7 @@ import { ReactNode } from 'react';
 import Footer from './Footer';
 import Navbar from './Navbar';
 import Prefooter from './Prefooter';
-import Prices from './Prices';
+import Pricing from './Pricing';
 
 type PageMeta = {
   title: string;
@@ -48,7 +48,7 @@ export default function Layout({ children, meta: pageMeta }: Props) {
       </Head>
       <Navbar />
       <main id="skip">{children}</main>
-      <Prices />
+      <Pricing />
       <Prefooter />
       <Footer />
     </div>

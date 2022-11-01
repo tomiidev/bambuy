@@ -65,9 +65,9 @@ const pricesmonth = [
     },
 ];
 
-export default function Prices() {
+export default function Pricing() {
     return (
-        <div className="bg-white" id="prices">
+        <div className="bg-white" id="pricing">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-16">
                 <h2 className="text-4xl font-bold text-center">
                     Pricing
