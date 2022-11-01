@@ -60,7 +60,7 @@ export function Services() {
               />
             </div>
             <h2 className="font-bold text-lg text-center">{service.title}</h2>
-            <p className="text-base pt-2 text-center">{service.description}</p>
+            <p className="pt-2 text-base text-center">{service.description}</p>
           </div>
         ))}
       </div>

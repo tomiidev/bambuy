@@ -85,7 +85,6 @@ export default function Prices() {
                         // other style
                         //     className="rounded-2xl border border-gray-300 shadow-sm p-8 relative flex flex-col"
                         // >
-
                         className={`rounded-2xl  shadow-sm p-8 relative flex flex-col ${plan.mostPopular
                             ? "border-rose-300 border-2 border-solid"
                             : "border-gray-300 border"}      
