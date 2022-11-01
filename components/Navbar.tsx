@@ -6,10 +6,10 @@ import Image from 'next/image';
 
 
 const navigation = [
-  { name: 'Home', href: '#', current: true },
-  { name: 'About', href: '#', current: false },
+  { name: 'Home', href: '/', current: true },
+  { name: 'Services', href: '#services', current: false },
+  { name: 'Prices', href: '#prices', current: false },
   { name: 'Projects', href: '#', current: false },
-  { name: 'Services', href: '#', current: false },
   { name: 'Contact', href: '#', current: false },
 ]
 
@@ -30,7 +30,7 @@ export default function Navbar() {
                   <Link href="/">
                     <Image
                       className="block h-8 w-auto lg:hidden"
-                      src="/logo-rose.svg"
+                      src="/images/logos/logo-rose.svg"
                       alt="Logo Your Company"
                       width={150}
                       height={150}
@@ -42,7 +42,7 @@ export default function Navbar() {
                   <Link href="/">
                     <Image
                       className="hidden h-8 w-auto lg:block"
-                      src="/logo-rose.svg"
+                      src="/images/logos/logo-rose.svg"
                       alt="Logo Your Company"
                       width={150}
                       height={150}
@@ -61,7 +61,7 @@ export default function Navbar() {
                         href={item.href}
                         className={classNames(
                           item.current ? 'text-black' : 'text-black hover:underline',
-                          'text-sm font-medium'
+                          'text-base font-semibold'
                         )}
                         aria-current={item.current ? 'page' : undefined}
                       >
@@ -69,11 +69,11 @@ export default function Navbar() {
                       </a>
                     ))}
                   </div>
-                </div>             
+                </div>
 
                 <div className="absolute inset-y-0 right-12 sm:right-0 flex items-center">
                   <Link href="#">
-                    <button className="bg-black text-white border-2 border-solid border-black hover:bg-white hover:text-black rounded-full px-4 p-2 text-sm font-medium">
+                    <button className="bg-black text-white border-2 border-solid border-black hover:bg-white hover:text-black rounded-full px-4 p-2 text-base font-medium">
                       Purchase Service
                     </button>
                   </Link>

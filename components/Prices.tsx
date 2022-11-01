@@ -70,7 +70,7 @@ export default function Prices() {
         <div className="bg-white" id="prices">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-16">
                 <h2 className="text-3xl font-bold text-center">
-                    Affordable prices 💰
+                    Affordable prices
                 </h2>
 
                 <p className="pt-4 text-center w-auto">
@@ -82,14 +82,20 @@ export default function Prices() {
                 {pricesmonth.map((plan) => (
                     <div
                         key={plan.title}
-                        className="rounded-2xl border border-gray-200 shadow-lg p-8 relative flex flex-col"
-                    >
+                        // other style
+                        //     className="rounded-2xl border border-gray-300 shadow-sm p-8 relative flex flex-col"
+                        // >
+
+                        className={`rounded-2xl  shadow-sm p-8 relative flex flex-col ${plan.mostPopular
+                            ? "border-rose-300 border-2 border-solid"
+                            : "border-gray-300 border"}      
+                              `}>
                         <h3 className="text-lg font-bold leading-5">
                             {plan.title}
                         </h3>
                         {plan.mostPopular && (
                             <p className="absolute top-0 px-4 py-1 -translate-y-1/2 bg-rose-100 text-rose-500  rounded-full font-semibold tracking-wide shadow-md">
-                                Recommended plan
+                                Most popular
                             </p>
                         )}
                         <p className="mt-4  leading-6">{plan.description}</p>

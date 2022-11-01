@@ -23,7 +23,7 @@ export default function Layout({ children, meta: pageMeta }: Props) {
   const meta = {
     title: 'Welcome to Halley',
     description: 'Description  halley page',
-    cardImage: '/cardimage.png',
+    cardImage: '/images/seo/cardimage.png',
     ...pageMeta
   };
 
