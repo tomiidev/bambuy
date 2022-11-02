@@ -1,6 +1,7 @@
+import Contact from "../components/Contact";
 import { Hero } from "../components/Hero";
 import Layout from "../components/Layout";
-import { Screenshots } from "../components/Screenshots";
+import Pricing from "../components/Pricing";
 import { Services } from "../components/Services";
 
 
@@ -9,7 +10,8 @@ export default function Home() {
       <Layout>
         <Hero />
         <Services />
-        {/* <Screenshots /> */}
+        <Pricing />
+        <Contact />
       </Layout>
   )
 }
