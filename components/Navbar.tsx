@@ -19,7 +19,7 @@ function classNames(...classes: any) {
 
 export default function Navbar() {
   return (
-    <Disclosure as="nav" className=" fixed top-0 left-0 right-0 bg-white border-b border-gray-200 backdrop-blur-sm bg-white/95 z-20">
+    <Disclosure as="nav" className=" fixed top-0 left-0 right-0 bg-white border-b border-gray-200 backdrop-blur-sm bg-white/90 z-20">
       {({ open }: { open: any }) => (
         <>
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -54,14 +54,14 @@ export default function Navbar() {
                 </div>
 
                 <div className="hidden sm:ml-6 sm:block">
-                  <div className="flex space-x-4 items-center">
+                  <div className="flex space-x-5 items-center">
                     {navigation.map((item) => (
                       <a
                         key={item.name}
                         href={item.href}
                         className={classNames(
                           item.current ? 'text-black' : 'text-black hover:underline',
-                          'text-base font-semibold'
+                          'text-base font-medium'
                         )}
                         aria-current={item.current ? 'page' : undefined}
                       >
@@ -73,7 +73,7 @@ export default function Navbar() {
 
                 <div className="absolute inset-y-0 right-12 sm:right-0 flex items-center">
                   <Link href="#">
-                    <button className="bg-black text-white border-2 border-solid border-black hover:bg-white hover:text-black rounded-full px-4 p-2 text-base font-medium">
+                    <button className="bg-black text-white px-4 p-2 text-base font-medium border-2 border-solid border-black hover:bg-white hover:text-black rounded-full">
                       Purchase Service
                     </button>
                   </Link>

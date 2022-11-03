@@ -11,7 +11,7 @@ export default function Contact() {
         </h2>
 
         <p className="pt-6 pb-6 text-base max-w-2xl text-center m-auto">
-          Want to contact us? Choose an option below and well be happy to show you how Halley can transform her companys web experience.        </p>
+          Want to contact us? Choose an option below and well be happy to show you how Halley can transform her companys web experience.</p>
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 pb-16 grid md:grid-cols-2 lg:grid-cols-2 gap-y-8 md:gap-x-8 md:gap-y-8 lg:gap-x-8 lg:gap-y-16">
@@ -46,21 +46,22 @@ export default function Contact() {
               type="text"
               placeholder="Full Names"
               autoComplete="false"
-              className="w-full px-4 py-3 mb-4 border-gray-500 border placeholder:text-black rounded-md outline-none"
+              // className="w-full px-4 py-3 mb-4 border-gray-500 border placeholder:text-black rounded-md outline-none"
+              className="w-full px-4 py-3 mb-4 border-2 placeholder:text-gray-800 rounded-md outline-none focus:ring-4 border-gray-300 focus:border-gray-600 ring-gray-100"
             />
 
             <input
               type="text"
               placeholder="Email Address"
               autoComplete="false"
-              className="w-full px-4 py-3 mb-4 border-gray-500 border placeholder:text-black rounded-md outline-none"
+              className="w-full px-4 py-3 mb-4 border-2 placeholder:text-gray-800 rounded-md outline-none focus:ring-4 border-gray-300 focus:border-gray-600 ring-gray-100"
             />
 
             <textarea
               name="message"
               placeholder="Your Message"
               autoComplete="false"
-              className="w-full px-4 py-3 mb-4 h-36 border-gray-500 border placeholder:text-black rounded-md outline-none"
+              className="w-full px-4 py-3 mb-4 h-36 border-2 placeholder:text-gray-800 rounded-md outline-none focus:ring-4 border-gray-300 focus:border-gray-600 ring-gray-100"
             />
 
 
