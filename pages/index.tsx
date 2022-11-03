@@ -1,4 +1,5 @@
 import Contact from "../components/Contact";
+import Faq from "../components/Faq";
 import { Hero } from "../components/Hero";
 import Layout from "../components/Layout";
 import Pricing from "../components/Pricing";
@@ -11,6 +12,7 @@ export default function Home() {
         <Hero />
         <Services />
         <Pricing />
+        <Faq />
         <Contact />
       </Layout>
   )
