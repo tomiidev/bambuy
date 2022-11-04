@@ -41,7 +41,7 @@ export function Services() {
         </h2>
 
         <p className="pt-6 pb-6 text-base max-w-2xl text-center m-auto">
-          Patreon is the best place for creators to build memberships by providing exclusive access to their work and a deeper connection with their communities.
+          Patreon is the best place for creators to build memberships by providing exclusive access to their work and a deeper connection.
         </p>
       </div>
 

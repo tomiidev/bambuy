@@ -6,7 +6,7 @@ const contents = [
   {
     title: "Dashboard",
     description:
-      "Euismod fames in felis ornare interdum phasellus imperdiet habitant, elementum leo lobortis mus primis dictumst vehicula hendrerit, facilisis suscipit nullam cursus tincidunt natoque vestibulum.",
+      "Euismod fames in felis ornare interdum phasellus imperdiet habitant, elementum leo lobortis facilisis suscipit nullam.",
     features: [
       "Lacus eu mauris quisque tortor torquent",
       "Lorem ipsum dolor sit amet consectetur",
@@ -18,10 +18,9 @@ const contents = [
   {
     title: "Products",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga natus at modi ea tempore sapiente optio, quas sint nobis pariatur, deserunt quidem, veniam autem quod mollitia.",
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga natus at modi ea tempore sapiente optio, quas sint nobis pariatur.",
     features: [
       "But I must explain to you how all this mistaken",
-      "At vero eos et accusamus et iusto odio dignissimos",
       "Voluptatum deleniti atque corrupti quos",
       "He endures pains to avoid worse pains",
     ],
@@ -31,7 +30,7 @@ const contents = [
   {
     title: "Inventory",
     description:
-      "Porta facilisis ullamcorper rutrum erat luctus aliquam phasellus pharetra fusce, aliquet montes turpis mus accumsan donec pulvinar vitae habitasse, lectus lacinia sem cursus mauris eu tempus duis",
+      "Porta facilisis ullamcorper rutrum erat luctus aliquam phasellus pharetra fusce, aliquet montes turpis mus habitasse lectus lacinia.",
     features: [
       "Sed ut perspiciatis unde omnis iste natus",
       "Quis autem vel eum iure reprehenderit",
@@ -44,12 +43,12 @@ const contents = [
 
 export function Features() {
   return (
-    <div className="bg-white max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 gap-x-40 pt-16 pb-16">
+    <div className="bg-white max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 gap-x-40 pt-16 pb-16" id="features">
       <h2 className="text-4xl font-bold text-center">
         Features
       </h2>
       <p className="pt-6 text-base max-w-2xl text-center m-auto">
-        Halley nunc pulvinar lobortis duis. Leo mollis neque arcu ullamcorper aliquam sociis sem nullam, elementum vestibulum augue placerat odio hendrerit faucibus.
+        Halley nunc pulvinar lobortis duis. Leo mollis neque ullamcorper aliquam sem nullam, elementum vestibulum augue placerat.
       </p>
 
       {contents.map((content) => (
