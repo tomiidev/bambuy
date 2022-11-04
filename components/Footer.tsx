@@ -31,7 +31,7 @@ const social = [
 
 export default function Footer() {
   return (
-    <footer className="bg-black text-white">
+    <footer className="bg-black text-neutral-300 dark:text-neutral-400">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pt-12 pb-12 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3  lg:grid-cols-6">
         <div className="col-span-2">
           <Link href="/">
@@ -115,7 +115,7 @@ export default function Footer() {
         <Link
           href="https://humbersanchez.com"
           target="_blank"
-          className="text-white text-sm hover:text-rose-500 "
+          className="text-white text-sm hover:text-rose-500 dark:text-neutral-400 dark:hover:text-rose-500"
         >
           &copy; Copyright {new Date().getFullYear()}. All rights reserved.
         </Link>

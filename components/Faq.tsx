@@ -48,7 +48,7 @@ export default function Faq() {
                 <Disclosure as="div" className="mt-3">
                     {({ open }) => (
                         <>
-                            <Disclosure.Button className="flex w-full justify-between rounded-lg bg-gray-50 dark:bg-neutral-800 px-4 py-4 text-left text-base dark:text-neutral-400 font-medium hover:bg-gray-100 dark:hover:bg-neutral-900">
+                            <Disclosure.Button className="flex w-full justify-between rounded-lg bg-gray-50 dark:bg-neutral-800 px-4 py-4 text-left text-base font-medium hover:bg-gray-100 dark:hover:bg-neutral-900">
                                 <span>What is your refund policy?</span>
                                 <RiArrowUpSLine
                                     className={`${open ? 'rotate-180 transition-transform' : ''
@@ -64,7 +64,7 @@ export default function Faq() {
                 <Disclosure as="div" className="mt-3">
                     {({ open }) => (
                         <>
-                            <Disclosure.Button className="flex w-full justify-between rounded-lg bg-gray-50 dark:bg-neutral-800 px-4 py-4 text-left text-base dark:text-neutral-400 font-medium hover:bg-gray-100 dark:hover:bg-neutral-900">
+                            <Disclosure.Button className="flex w-full justify-between rounded-lg bg-gray-50 dark:bg-neutral-800 px-4 py-4 text-left text-base font-medium hover:bg-gray-100 dark:hover:bg-neutral-900">
                                 <span>What forms of payment do you accept?</span>
                                 <RiArrowUpSLine
                                     className={`${open ? 'rotate-180 transition-transform' : ''
