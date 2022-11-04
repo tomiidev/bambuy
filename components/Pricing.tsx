@@ -95,7 +95,7 @@ export default function Pricing() {
                             </p>
                         )}
                         <p className="mt-4  leading-6">{plan.description}</p>
-                        <div className="mt-6 rounded-lg bg-gray-50 p-6 -mx-6">
+                        <div className="mt-6 rounded-lg bg-gray-100 p-6 -mx-6">
                             <p className="text-sm font-semibold flex items-center">
                                 <span>{plan.currency}</span>
                                 <span className="text-4xl font-bold ml-3 ">{plan.price}</span>
