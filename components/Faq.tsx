@@ -23,8 +23,8 @@ export default function Faq() {
                                 />
                             </Disclosure.Button>
                             <Disclosure.Panel className="px-4 pt-4 pb-2 text-base">
-                                If you're unhappy with your purchase for any reason, email us
-                                within 90 days and we'll refund you in full, no questions asked.
+                                If youre unhappy with your purchase for any reason, email us
+                                within 90 days and well refund you in full, no questions asked.
                             </Disclosure.Panel>
                         </>
                     )}
@@ -40,7 +40,7 @@ export default function Faq() {
                                 />
                             </Disclosure.Button>
                             <Disclosure.Panel className="px-4 pt-4 pb-2 text-base">
-                                No, we don't offer technical support for free downloads. Please purchase a support plan to get 6 months of support.
+                                No, we dont offer technical support for free downloads. Please purchase a support plan to get 6 months of support.
                             </Disclosure.Panel>
                         </>
                     )}
@@ -56,7 +56,7 @@ export default function Faq() {
                                 />
                             </Disclosure.Button>
                             <Disclosure.Panel className="px-4 pt-4 pb-2 text-base">
-                                If you're unhappy with your purchase for any reason, email us within 90 days and we'll refund you in full, no questions asked.
+                                If youre unhappy with your purchase for any reason, email us within 90 days and well refund you in full, no questions asked.
                             </Disclosure.Panel>
                         </>
                     )}
