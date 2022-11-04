@@ -15,7 +15,7 @@ export default function Faq() {
                 <Disclosure>
                     {({ open }) => (
                         <>
-                            <Disclosure.Button className="flex w-full justify-between rounded-lg bg-gray-100 px-4 py-3 text-left text-base font-medium hover:bg-gray-200">
+                            <Disclosure.Button className="flex w-full justify-between rounded-lg bg-gray-50 px-4 py-3 text-left text-base font-medium hover:bg-gray-100">
                                 <span>What is your refund policy?</span>
                                 <RiArrowUpSLine
                                     className={`${open ? 'rotate-180 transition-transform' : ''
@@ -29,10 +29,10 @@ export default function Faq() {
                         </>
                     )}
                 </Disclosure>
-                <Disclosure as="div" className="mt-2">
+                <Disclosure as="div" className="mt-3">
                     {({ open }) => (
                         <>
-                            <Disclosure.Button className="flex w-full justify-between rounded-lg bg-gray-100 px-4 py-3 text-left text-base font-medium hover:bg-gray-200">
+                            <Disclosure.Button className="flex w-full justify-between rounded-lg bg-gray-50 px-4 py-3 text-left text-base font-medium hover:bg-gray-100">
                                 <span>Do you offer technical support?</span>
                                 <RiArrowUpSLine
                                     className={`${open ? 'rotate-180 transition-transform' : ''
@@ -45,10 +45,10 @@ export default function Faq() {
                         </>
                     )}
                 </Disclosure>
-                <Disclosure as="div" className="mt-2">
+                <Disclosure as="div" className="mt-3">
                     {({ open }) => (
                         <>
-                            <Disclosure.Button className="flex w-full justify-between rounded-lg bg-gray-100 px-4 py-3 text-left text-base font-medium hover:bg-gray-200">
+                            <Disclosure.Button className="flex w-full justify-between rounded-lg bg-gray-50 px-4 py-3 text-left text-base font-medium hover:bg-gray-100">
                                 <span>What is your refund policy?</span>
                                 <RiArrowUpSLine
                                     className={`${open ? 'rotate-180 transition-transform' : ''
