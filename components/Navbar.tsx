@@ -3,6 +3,7 @@ import { FiMenu } from 'react-icons/fi';
 import { RiCloseFill } from 'react-icons/ri';
 import Link from 'next/link';
 import Image from 'next/image';
+import ThemeSwitch from './ThemeSwitch';
 
 
 const navigation = [
@@ -19,7 +20,7 @@ function classNames(...classes: any) {
 
 export default function Navbar() {
   return (
-    <Disclosure as="nav" className=" fixed top-0 left-0 right-0 bg-white border-b border-gray-200 backdrop-blur-sm bg-white/90 z-20">
+    <Disclosure as="nav" className=" fixed top-0 left-0 right-0 bg-white dark:bg-black text-black dark:text-neutral-400 border-b border-gray-200 dark:border-neutral-800 backdrop-blur-sm bg-white/90 dark:bg-black/80 z-20">
       {({ open }: { open: any }) => (
         <>
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -60,7 +61,7 @@ export default function Navbar() {
                         key={item.name}
                         href={item.href}
                         className={classNames(
-                          item.current ? 'text-black ' : 'text-black hover:underline',
+                          item.current ? 'text-black dark:text-neutral-400 ' : 'text-black dark:text-neutral-400 hover:underline',
                           'text-base font-medium'
                         )}
                         aria-current={item.current ? 'page' : undefined}
@@ -71,12 +72,15 @@ export default function Navbar() {
                   </div>
                 </div>
 
-                <div className="absolute inset-y-0 right-12 sm:right-0 flex items-center">
+                <div className="absolute inset-y-0 right-10 sm:right-0 flex items-center gap-2">
+                <ThemeSwitch />
                   <Link href="#">
-                    <button className="bg-black text-white px-4 p-2 text-base font-medium border-2 border-solid border-black hover:bg-white hover:text-black rounded-full">
+                    <button className="bg-black dark:bg-white text-white dark:text-black px-4 p-2 text-base font-medium dark:hover:bg-rose-500 hover:bg-rose-500 hover:text-white dark:hover:text-white rounded-full">
                       Purchase Service
                     </button>
                   </Link>
+
+                  
                 </div>
 
                 <div className="absolute inset-y-0 right-0 flex items-center sm:hidden">

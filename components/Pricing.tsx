@@ -67,13 +67,13 @@ const pricesmonth = [
 
 export default function Pricing() {
     return (
-        <div className="bg-gray-50" id="pricing">
+        <div className="bg-gray-50 dark:bg-black" id="pricing">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-16">
                 <h2 className="text-4xl font-bold text-center">
                     Pricing
                 </h2>
 
-                <p className="pt-6 text-base max-w-2xl text-center m-auto">
+                <p className="pt-6 text-base max-w-2xl text-center m-auto dark:text-neutral-400">
                     We have the perfect plan for your business, choose the plan that best suits you, Try Halley free for 14 days.
                 </p>
             </div>
@@ -95,7 +95,7 @@ export default function Pricing() {
                             </p>
                         )}
                         <p className="mt-4  leading-6">{plan.description}</p>
-                        <div className="mt-6 rounded-lg bg-gray-100 p-6 -mx-6">
+                        <div className="mt-6 rounded-lg bg-gray-100 dark:bg-neutral-800 p-6 -mx-6">
                             <p className="text-sm font-semibold flex items-center">
                                 <span>{plan.currency}</span>
                                 <span className="text-4xl font-bold ml-3 ">{plan.price}</span>

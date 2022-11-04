@@ -43,11 +43,11 @@ const contents = [
 
 export function Features() {
   return (
-    <div className="bg-white max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 gap-x-40 pt-16 pb-16" id="features">
+    <div className="bg-white dark:bg-black max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 gap-x-40 pt-16 pb-16" id="features">
       <h2 className="text-4xl font-bold text-center">
         Features
       </h2>
-      <p className="pt-6 text-base max-w-2xl text-center m-auto">
+      <p className="pt-6 text-base max-w-2xl text-center m-auto dark:text-neutral-400">
         Halley nunc pulvinar lobortis duis. Leo mollis neque ullamcorper aliquam sem nullam, elementum vestibulum augue placerat.
       </p>
 
@@ -60,13 +60,13 @@ export function Features() {
             className={`pt-8 md:pt-16 ${content.order ? "order-1 md:order-2" : "order-1"}`}
           >
             <h1 className="text-2xl font-bold">{content.title}</h1>
-            <p className="pt-6 pb-6 text-base">{content.description}</p>
+            <p className="pt-6 pb-6 text-base dark:text-neutral-400">{content.description}</p>
 
             <ul className="font-medium space-y-1 flex-1">
               {content.features.map((feature) => (
                 <li key={feature} className="leading-6 flex">
                   <FaCheck className="mt-2 w-3 h-3 text-rose-500 shrink-0" />
-                  <span className="ml-3">{feature}</span>
+                  <span className="ml-3 dark:text-neutral-400">{feature}</span>
                 </li>
               ))}
             </ul>

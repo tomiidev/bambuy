@@ -34,13 +34,13 @@ const services = [
 ];
 export function Services() {
   return (
-    <div className="bg-gray-50" id="services">
+    <div className="bg-gray-50 dark:bg-black" id="services">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 text-center">
         <h2 className="text-4xl font-bold">
           What is Halley?
         </h2>
 
-        <p className="pt-6 pb-6 text-base max-w-2xl text-center m-auto">
+        <p className="pt-6 pb-6 text-base max-w-2xl text-center m-auto dark:text-neutral-400">
           Patreon is the best place for creators to build memberships by providing exclusive access to their work and a deeper connection.
         </p>
       </div>
@@ -60,7 +60,7 @@ export function Services() {
               />
             </div>
             <h2 className="font-bold text-lg text-center">{service.title}</h2>
-            <p className="pt-2 text-base text-center">{service.description}</p>
+            <p className="pt-2 text-base text-center dark:text-neutral-400">{service.description}</p>
           </div>
         ))}
       </div>
