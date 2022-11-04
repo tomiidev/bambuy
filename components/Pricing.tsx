@@ -82,7 +82,7 @@ export default function Pricing() {
                 {pricesmonth.map((plan) => (
                     <div
                         key={plan.title}
-                        className={`rounded-2xl  shadow-sm p-8 relative flex flex-col ${plan.mostPopular
+                        className={`rounded-2xl p-8 relative flex flex-col ${plan.mostPopular
                             ? "border-rose-300 border-2 border-solid"
                             : "border-gray-300 border"}      
                               `}>

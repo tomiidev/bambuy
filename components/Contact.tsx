@@ -46,21 +46,21 @@ export default function Contact() {
               type="text"
               placeholder="Full Names"
               autoComplete="false"
-              className="w-full px-4 py-3 mb-4 border placeholder:text-gray-800 rounded-md outline-none border-gray-300 shadow-sm focus:border-gray-600"
+              className="w-full px-4 py-3 mb-4 border placeholder:text-gray-800 rounded-md outline-none border-gray-300 focus:border-gray-600"
             />
 
             <input
               type="text"
               placeholder="Email Address"
               autoComplete="false"
-              className="w-full px-4 py-3 mb-4 border placeholder:text-gray-800 rounded-md outline-none border-gray-300 shadow-sm focus:border-gray-600"
+              className="w-full px-4 py-3 mb-4 border placeholder:text-gray-800 rounded-md outline-none border-gray-300 focus:border-gray-600"
             />
 
             <textarea
               name="message"
               placeholder="Your Message"
               autoComplete="false"
-              className="w-full px-4 py-3 mb-4 h-36 border placeholder:text-gray-800 rounded-md outline-none border-gray-300 shadow-sm focus:border-gray-600"
+              className="w-full px-4 py-3 mb-4 h-36 border placeholder:text-gray-800 rounded-md outline-none border-gray-300 focus:border-gray-600"
             />
 
 
