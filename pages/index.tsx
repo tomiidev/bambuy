@@ -14,8 +14,8 @@ export default function Home() {
         <Services />
         <Features />
         <Pricing />
-        <Contact />
         <Faq />
+        <Contact />
       </Layout>
   )
 }

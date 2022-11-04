@@ -11,7 +11,7 @@ export default function Faq() {
             <p className="pt-6 pb-6 text-base max-w-2xl text-center m-auto">
                 Answer your customers possible questions here, it will increase the conversion rate as well as support or chat requests.
             </p>
-            <div className="mx-auto w-full max-w-2xl rounded-2xl bg-white p-2">
+            <div className="mx-auto w-full max-w-2xl rounded-2xl bg-white">
                 <Disclosure>
                     {({ open }) => (
                         <>
