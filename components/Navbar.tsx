@@ -3,8 +3,6 @@ import { FiMenu } from 'react-icons/fi';
 import { RiCloseFill } from 'react-icons/ri';
 import Link from 'next/link';
 import Image from 'next/image';
-import ThemeSwitch from './ThemeSwitch';
-
 
 const navigation = [
   { name: 'Home', href: '/', current: true },
@@ -73,7 +71,6 @@ export default function Navbar() {
                 </div>
 
                 <div className="absolute inset-y-0 right-10 sm:right-0 flex items-center gap-2">
-                  <ThemeSwitch />
                   <Link href="#">
                     <button className="bg-black dark:bg-white text-white dark:text-black px-4 p-2 text-base font-medium dark:hover:bg-rose-500 hover:bg-rose-500 hover:text-white dark:hover:text-white rounded-full">
                       Get free trial
