@@ -19,7 +19,7 @@ export function Hero() {
 
                         <div>
                             <Link href="#">
-                                <button className="bg-rose-100 text-rose-500 text-base rounded-full px-4 p-2 font-medium">
+                                <button className="bg-rose-500 text-white text-base rounded-full px-4 p-2 font-medium">
                                     View projects
                                 </button>
                             </Link>

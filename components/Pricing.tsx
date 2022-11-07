@@ -117,7 +117,7 @@ export default function Pricing() {
                             href="#"
                             className={`  mt-8 block px-6 py-4 font-semibold leading-4 text-center rounded-full ${plan.mostPopular
                                 ? "bg-rose-500 text-white shadow-md"
-                                : "bg-rose-100 text-rose-500"}      
+                                : "bg-black text-white"}      
                                       `}>
                             {plan.cta}
                         </Link>
