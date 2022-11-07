@@ -16,9 +16,10 @@ const ThemeSwitch = () => {
   //   }
 
   return (
-    <div className="inline-flex items-center">
+    <div className="inline-flex items-center ">
       <BiSun className="w-4 h-4 mr-2" />
-      <select
+      <select 
+        className="dark:bg-black cursor-pointer outline-none"
         name="themeSwitch"
         value={theme}
         onChange={e => setTheme(e.target.value)}>
