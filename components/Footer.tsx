@@ -39,10 +39,10 @@ const column1 = [
 ]
 
 const column2 = [
+  { name: 'Not Found 404', href: '404' },
   { name: 'Documentation', href: '#' },
   { name: 'Guides', href: '#' },
   { name: 'Help', href: '#' },
-  { name: 'Security', href: '#' },
 ]
 
 const column3 = [
