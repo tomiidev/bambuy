@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { useState } from "react";
 import { FaCheck } from "react-icons/fa";
 
 const pricesmonth = [
@@ -65,7 +66,10 @@ const pricesmonth = [
     },
 ];
 
+type BillingInterval = 'year' | 'month';
+
 export default function Pricing() {
+    const [billingInterval, setBillingInterval] = useState<BillingInterval>('month');
     return (
         <div className="bg-gray-50 dark:bg-black" id="pricing">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-16">
@@ -78,12 +82,37 @@ export default function Pricing() {
                 </p>
             </div>
 
+            <div className="max-w-xs mx-auto justify-center bg-gray-200 dark:bg-neutral-800 rounded-lg flex mt-12">
+                <button
+                    onClick={() => setBillingInterval('month')}
+                    type="button"
+                    className={`${billingInterval === 'month'
+                        ? 'relative w-1/2 bg-white dark:bg-neutral-600 text-black dark:text-white'
+                        : 'ml-0.5 relative w-1/2 text-black dark:text-neutral-400'
+                        } rounded-lg m-1 py-2 text-sm font-medium whitespace-nowrap focus:outline-none sm:w-auto sm:px-8`}
+                >
+                    Monthly billing
+                </button>
+                <button
+                    onClick={() => setBillingInterval('year')}
+                    type="button"
+                    className={`${billingInterval === 'year'
+                        ? 'relative w-1/2 bg-white dark:bg-neutral-600 text-black dark:text-white'
+                        : 'ml-0.5 relative w-1/2 text-black dark:text-neutral-400'
+                        } rounded-lg m-1 py-2 text-sm font-medium whitespace-nowrap focus:outline-none sm:w-auto sm:px-8`}
+                >
+                    Yearly billing
+                </button>
+            </div>
+
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 pb-16 grid md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-16">
+
+
                 {pricesmonth.map((plan) => (
                     <div
                         key={plan.title}
                         className={`rounded-2xl p-8 relative flex flex-col ${plan.mostPopular
-                            ? "border-rose-300 border-2 border-solid"
+                            ? "border-rose-300 border-2 border-solid dark:border-rose-500"
                             : "border-gray-300 border"}      
                               `}>
                         <h3 className="text-lg font-bold leading-5">
