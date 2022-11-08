@@ -11,7 +11,7 @@ export default function Home() {
                 </h2>
 
                 <p className="pt-6 pb-16 text-base max-w-2xl text-center m-auto dark:text-neutral-400">
-                    I'm guessing you spelled something wrong. Can you double check that URL?
+                    Im guessing you spelled something wrong. Can you double check that URL?
                 </p>
                 <div className="mx-auto w-full max-w-2xl rounded-2xl bg-white dark:bg-black">
                     <Image
