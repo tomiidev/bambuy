@@ -4,7 +4,7 @@ import { HiOutlinePhone } from "react-icons/hi"
 
 export default function Contact() {
   return (
-    <div className="bg-white dark:bg-black" id="contact">
+    <div className="bg-gray-50 dark:bg-black" id="contact">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 text-center">
         <h2 className="text-4xl font-bold">
           Contact
@@ -27,16 +27,16 @@ export default function Contact() {
 
           <div className="flex items-center mt-2 space-x-2 text-dark-600 dark:text-neutral-400">
             <MdOutlineMail className="w-4 h-4" />
-            <a href="mailto:hola@humbersanchez.com">
-              hola@humbersanchez.com
+            <a href="mailto:hello@halley.vercel.app">
+              hello@halley.vercel.app
             </a>
           </div>
 
 
           <div className="flex items-center mt-2 space-x-2 text-dark-600 dark:text-neutral-400">
             <HiOutlinePhone className="w-4 h-4" />
-            <a href="tel:51931133631">
-              +51 931133631
+            <a href="tel:51931999999">
+              +51 931999999
             </a>
           </div>
         </div>

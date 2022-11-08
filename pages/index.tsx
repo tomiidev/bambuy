@@ -5,6 +5,7 @@ import Pricing from "../components/Pricing";
 import { Features } from "../components/Features";
 import { Services } from "../components/Services";
 import Faq from "../components/Faq";
+import Customers from "../components/Customers";
 
 
 export default function Home() {
@@ -16,6 +17,7 @@ export default function Home() {
         <Pricing />
         <Faq />
         <Contact />
+        <Customers />
       </Layout>
   )
 }
