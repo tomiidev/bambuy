@@ -121,7 +121,7 @@ export default function Pricing() {
                         key={plan.title}
                         className={`rounded-lg py-8 relative flex flex-col ${plan.mostPopular
                             ? "border-rose-300 border-2 border-solid dark:border-rose-500"
-                            : "border-gray-300 border"}      
+                            : "border-gray-300 border dark:border-neutral-500"}      
                               `}>
                         <h3 className="px-6 text-lg font-semibold leading-5">
                             {plan.title}
@@ -133,7 +133,7 @@ export default function Pricing() {
                         )}
 
 
-                        <p className="px-6 mt-4 leading-6">{plan.description}</p>
+                        <p className="px-6 mt-4 leading-6 dark:text-neutral-400">{plan.description}</p>
                         <div className="mt-2 p-6 -mx-6">
                             <p className="px-6 font-medium flex place-items-end">
                                 <span className="text-4xl font-bold">{plan.currency}</span>
@@ -153,12 +153,12 @@ export default function Pricing() {
                         </Link>
 
                         {/* features */}
-                        <ul className="mt-6 px-6 space-y-4 flex-1 border-t border-gray-300">
-                            <p className="mt-6 font-semibold ">What&apos;s included</p>
+                        <ul className="mt-6 px-6 space-y-4 flex-1 border-t border-gray-300 dark:border-neutral-500">
+                            <p className="mt-6 font-semibold dark:text-neutral-300">What&apos;s included</p>
                             {plan.features.map((feature) => (
                                 <li key={feature} className="leading-6 flex">
                                     <FaCheck className="mt-2 w-3 h-3 text-rose-500 shrink-0" />
-                                    <span className="ml-3">{feature}</span>
+                                    <span className="ml-3 dark:text-neutral-400">{feature}</span>
                                 </li>
                             ))}
                         </ul>
