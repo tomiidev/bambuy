@@ -15,6 +15,7 @@ const products = [
             "Point of sale",
             "Customers",
         ],
+        href: "#",
         cta: "Buy Hobby",
         mostPopular: false,
     },
@@ -30,6 +31,7 @@ const products = [
             "Point of sale",
             "Customers",
         ],
+        href: "#",
         cta: "Buy Hobby",
         mostPopular: false,
     },
@@ -46,6 +48,7 @@ const products = [
             "Dashboard",
             "Point of sale",
         ],
+        href: "#",
         cta: "Buy Freelancer",
         mostPopular: true,
     },
@@ -62,6 +65,7 @@ const products = [
             "Dashboard",
             "Point of sale",
         ],
+        href: "#",
         cta: "Buy Freelancer",
         mostPopular: true,
     },
@@ -80,6 +84,7 @@ const products = [
             "Finance",
             "mobile App",
         ],
+        href: "#",
         cta: "Buy Startup",
         mostPopular: false,
     },
@@ -98,6 +103,7 @@ const products = [
             "Finance",
             "mobile App",
         ],
+        href: "#",
         cta: "Buy Startup",
         mostPopular: false,
     },
@@ -118,6 +124,7 @@ const products = [
             "Finance",
             "mobile App",
         ],
+        href: "#",
         cta: "Buy Enterprice",
         mostPopular: false,
     },
@@ -138,6 +145,7 @@ const products = [
             "Finance",
             "mobile App",
         ],
+        href: "#",
         cta: "Buy Enterprice",
         mostPopular: false,
     },
@@ -183,7 +191,7 @@ export default function Pricing() {
             </div>
 
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 pb-16 grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-x-6 gap-y-16">
-                {products.map(({ title, mostPopular, description, currency, price, frecuency, cta, features }) => {
+                {products.map(({ title, mostPopular, description, currency, price, frecuency, cta, features, href }) => {
                     return (
                         <>
                             {billingInterval === frecuency ? (
@@ -213,7 +221,7 @@ export default function Pricing() {
 
                                     {/* Call to action */}
                                     <Link
-                                        href="#"
+                                        href={href} target="_blank"
                                         className={`mt-4 mx-6 block px-6 py-3 font-medium leading-4 text-center rounded-lg ${mostPopular
                                             ? "bg-rose-500 text-white shadow-md"
                                             : "bg-black text-white dark:bg-white dark:text-black"}`}>
