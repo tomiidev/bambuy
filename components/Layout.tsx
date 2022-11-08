@@ -22,12 +22,12 @@ export default function Layout({ children, meta: pageMeta }: Props) {
   const meta = {
     title: 'Halley',
     description: 'Description halley page',
-    cardImage: '/images/seo/cardimage.png',
+    cardImage: '/images/seo/halley-banner.png',
     ...pageMeta
   };
 
   return (
-    <div className="min-w-[350px] ">
+    <div className="min-w-[350px]">
       <Head>
         <title>{meta.title}</title>
         <meta name="robots" content="follow, index" />
