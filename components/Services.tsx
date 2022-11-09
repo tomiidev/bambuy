@@ -41,7 +41,7 @@ export function Services() {
         </h2>
 
         <p className="pt-6 pb-6 text-base max-w-2xl text-center m-auto dark:text-neutral-400">
-          Patreon is the best place for creators to build memberships by providing exclusive access to their work and a deeper connection.
+          Halley is consectetur Obcaecati veniam explicabo perspiciatis sapiente saepe sequi atque aut ullam aliquam.
         </p>
       </div>
 
@@ -50,7 +50,6 @@ export function Services() {
           <div key={service.title}>
             <div className="h-32 w-auto flex place-content-center">
               <Image
-              className="bg-slate-000"
                 src={service.image}
                 alt="Service description"
                 width={130}
