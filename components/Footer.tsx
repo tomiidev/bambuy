@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import ThemeSwitch from './ThemeSwitch';
+import ThemeSwitch from './ThemeSwitchFooter';
 
 import { FaFacebook } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";

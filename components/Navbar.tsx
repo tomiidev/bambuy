@@ -3,6 +3,7 @@ import { FiMenu } from 'react-icons/fi';
 import { RiCloseFill } from 'react-icons/ri';
 import Link from 'next/link';
 import Image from 'next/image';
+import ThemeSwitchNavbar from './ThemeSwitchNavbar';
 
 const navigation = [
   { name: 'Home', href: '/', current: true },
@@ -76,6 +77,7 @@ export default function Navbar() {
                       Get free trial
                     </button>
                   </Link>
+                  <ThemeSwitchNavbar />
                 </div>
 
                 <div className="absolute inset-y-0 right-0 flex items-center sm:hidden">

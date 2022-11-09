@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react'
 import { useTheme } from 'next-themes'
 import { FiSun } from 'react-icons/fi'
 
-const ThemeSwitch = () => {
+const ThemeSwitchFooter = () => {
   const [mounted, setMounted] = useState(false)
   const { theme, setTheme } = useTheme()
 
@@ -27,4 +27,4 @@ const ThemeSwitch = () => {
   )
 }
 
-export default ThemeSwitch
+export default ThemeSwitchFooter
