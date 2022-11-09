@@ -15,14 +15,14 @@ export default function Faq() {
                 <Disclosure>
                     {({ open }) => (
                         <>
-                            <Disclosure.Button className="flex w-full justify-between rounded-lg bg-gray-50 dark:bg-neutral-800 px-4 py-4 text-left text-base font-medium hover:bg-gray-100 dark:hover:bg-neutral-900">
+                            <Disclosure.Button className={`${open ? 'bg-neutral-100 dark:bg-neutral-800 hover:bg-neutral-100 rounded-b-none' : ''} flex w-full justify-between rounded-lg bg-neutral-50 dark:bg-neutral-900 hover:bg-neutral-100 dark:hover:bg-neutral-800 px-4 py-4 text-left text-base font-medium `}>
                                 <span>What is your refund policy?</span>
                                 <RiArrowUpSLine
                                     className={`${open ? 'rotate-180 transition-transform' : ''
                                         } h-5 w-5`}
                                 />
                             </Disclosure.Button>
-                            <Disclosure.Panel className="px-4 pt-4 pb-2 text-base dark:text-neutral-400">
+                            <Disclosure.Panel className={`${open ? 'px-4 pt-4 pb-2 text-base dark:text-neutral-400' : ''} bg-neutral-100 dark:bg-neutral-800 rounded-b-lg`}>
                                 If youre unhappy with your purchase for any reason, email us
                                 within 90 days and well refund you in full, no questions asked.
                             </Disclosure.Panel>
@@ -32,14 +32,14 @@ export default function Faq() {
                 <Disclosure as="div" className="mt-3">
                     {({ open }) => (
                         <>
-                            <Disclosure.Button className="flex w-full justify-between rounded-lg bg-gray-50 dark:bg-neutral-800 px-4 py-4 text-left text-base font-medium hover:bg-gray-100 dark:hover:bg-neutral-900">
+                            <Disclosure.Button className={`${open ? 'bg-neutral-100 dark:bg-neutral-800 hover:bg-neutral-100 rounded-b-none' : ''} flex w-full justify-between rounded-lg bg-neutral-50 dark:bg-neutral-900 hover:bg-neutral-100 dark:hover:bg-neutral-800 px-4 py-4 text-left text-base font-medium `}>
                                 <span>Do you offer technical support?</span>
                                 <RiArrowUpSLine
                                     className={`${open ? 'rotate-180 transition-transform' : ''
                                         } h-5 w-5`}
                                 />
                             </Disclosure.Button>
-                            <Disclosure.Panel className="px-4 pt-4 pb-2 text-base dark:text-neutral-400">
+                            <Disclosure.Panel className={`${open ? 'px-4 pt-4 pb-2 text-base dark:text-neutral-400' : ''} bg-neutral-100 dark:bg-neutral-800 rounded-b-lg`}>
                                 No, we dont offer technical support for free downloads. Please purchase a support plan to get 6 months of support.
                             </Disclosure.Panel>
                         </>
@@ -48,14 +48,14 @@ export default function Faq() {
                 <Disclosure as="div" className="mt-3">
                     {({ open }) => (
                         <>
-                            <Disclosure.Button className="flex w-full justify-between rounded-lg bg-gray-50 dark:bg-neutral-800 px-4 py-4 text-left text-base font-medium hover:bg-gray-100 dark:hover:bg-neutral-900">
+                            <Disclosure.Button className={`${open ? 'bg-neutral-100 dark:bg-neutral-800 hover:bg-neutral-100 rounded-b-none' : ''} flex w-full justify-between rounded-lg bg-neutral-50 dark:bg-neutral-900 hover:bg-neutral-100 dark:hover:bg-neutral-800 px-4 py-4 text-left text-base font-medium `}>
                                 <span>What is your refund policy?</span>
                                 <RiArrowUpSLine
                                     className={`${open ? 'rotate-180 transition-transform' : ''
                                         } h-5 w-5`}
                                 />
                             </Disclosure.Button>
-                            <Disclosure.Panel className="px-4 pt-4 pb-2 text-base dark:text-neutral-400">
+                            <Disclosure.Panel className={`${open ? 'px-4 pt-4 pb-2 text-base dark:text-neutral-400' : ''} bg-neutral-100 dark:bg-neutral-800 rounded-b-lg`}>
                                 If youre unhappy with your purchase for any reason, email us within 90 days and well refund you in full, no questions asked.
                             </Disclosure.Panel>
                         </>
@@ -64,15 +64,16 @@ export default function Faq() {
                 <Disclosure as="div" className="mt-3">
                     {({ open }) => (
                         <>
-                            <Disclosure.Button className="flex w-full justify-between rounded-lg bg-gray-50 dark:bg-neutral-800 px-4 py-4 text-left text-base font-medium hover:bg-gray-100 dark:hover:bg-neutral-900">
+                            <Disclosure.Button className={`${open ? 'bg-neutral-100 dark:bg-neutral-800 hover:bg-neutral-100 rounded-b-none' : ''} flex w-full justify-between rounded-lg bg-neutral-50 dark:bg-neutral-900 hover:bg-neutral-100 dark:hover:bg-neutral-800 px-4 py-4 text-left text-base font-medium `}>
                                 <span>What forms of payment do you accept?</span>
                                 <RiArrowUpSLine
                                     className={`${open ? 'rotate-180 transition-transform' : ''
                                         } h-5 w-5`}
                                 />
                             </Disclosure.Button>
-                            <Disclosure.Panel className="px-4 pt-4 pb-2 text-base dark:text-neutral-400">
-                                You can use any debit or credit card to pay for a subscription. We secure your card details and process payments via Stripe.
+                            <Disclosure.Panel className={`${open ? 'px-4 pt-4 pb-2 text-base dark:text-neutral-400' : ''} bg-neutral-100 dark:bg-neutral-800 rounded-b-lg`}>
+                                You can use any debit or credit card to pay for a subscription. We secure your card details and process payments via Stripe. <br /><br />
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta, at vitae! Magni impedit minus architecto porro? Amet cumque quis facere.
                             </Disclosure.Panel>
                         </>
                     )}
