@@ -101,7 +101,7 @@ export default function Contact() {
               <input type="hidden" {...register("subject")} />
               <input
                 type="hidden"
-                value="Mission Control"
+                value="Halley"
                 {...register("from_name")}
               />
               <input
