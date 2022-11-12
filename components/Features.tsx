@@ -43,7 +43,7 @@ const contents = [
 
 export function Features() {
   return (
-    <div className="bg-white dark:bg-black" id="features">
+    <div className="bg-white dark:bg-neutral-900" id="features">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 gap-x-40 pt-16 pb-16">
         <h2 className="text-4xl font-bold text-center">
           Features

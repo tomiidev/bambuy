@@ -156,7 +156,7 @@ type BillingInterval = 'year' | 'month';
 export default function Pricing() {
     const [billingInterval, setBillingInterval] = useState<BillingInterval>('month');
     return (
-        <div className="bg-gray-50 dark:bg-black" id="pricing">
+        <div className="bg-gray-50 dark:bg-neutral-800" id="pricing">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-16">
                 <h2 className="text-4xl font-bold text-center">
                     Pricing
@@ -167,7 +167,7 @@ export default function Pricing() {
                 </p>
             </div>
 
-            <div className="max-w-xs mx-auto justify-center bg-gray-200 dark:bg-neutral-800 rounded-lg flex mt-12">
+            <div className="max-w-xs mx-auto justify-center bg-neutral-200 dark:bg-neutral-900 rounded-lg flex mt-12">
                 <button
                     onClick={() => setBillingInterval('month')}
                     type="button"
@@ -199,7 +199,7 @@ export default function Pricing() {
                                     key={title}
                                     className={`rounded-lg py-8 relative flex flex-col ${mostPopular
                                         ? "border-rose-300 border-2 border-solid dark:border-rose-500"
-                                        : "border-gray-300 border dark:border-neutral-500"}`}>
+                                        : "border-neutral-400 border dark:border-neutral-400"}`}>
                                     <h3 className="px-6 text-lg font-semibold leading-5">
                                         {title}
                                     </h3>
@@ -229,7 +229,7 @@ export default function Pricing() {
                                     </Link>
 
                                     {/* features */}
-                                    <ul className="mt-6 px-6 space-y-4 flex-1 border-t border-gray-300 dark:border-neutral-500">
+                                    <ul className="mt-6 px-6 space-y-4 flex-1 border-t border-neutral-300 dark:border-neutral-500">
                                         <p className="mt-6 font-semibold dark:text-neutral-300">What&apos;s included</p>
                                         {features.map((features) => (
                                             <li key={features} className="leading-6 flex">

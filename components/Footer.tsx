@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import ThemeSwitch from './ThemeSwitchFooter';
+import ThemeSwitchOption from './ThemeSwitchOption';
 
 import { FaFacebook } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
@@ -53,7 +53,7 @@ const column3 = [
 
 export default function Footer() {
   return (
-    <footer className="bg-black text-neutral-300 dark:text-neutral-400">
+    <footer className="bg-neutral-900 text-neutral-300 dark:text-neutral-400">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pt-12 pb-12 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-5">
         <div className="col-span-2 sm:col-span-3 md:col-span-3 lg:col-span-2 2xl:col-span-2">
           <Link href="/">
@@ -116,7 +116,9 @@ export default function Footer() {
               {item.name}
             </Link>
           ))}
-          <ThemeSwitch />
+          <div className="mt-12">
+          <ThemeSwitchOption />
+          </div>         
         </div>
       </div>
 
