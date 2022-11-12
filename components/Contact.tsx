@@ -123,7 +123,7 @@ export default function Contact() {
                   placeholder="Full Name"
                   autoComplete="false"
                   className={`w-full px-4 py-3 border-2 placeholder:text-neutral-800 dark:text-white rounded-md outline-none dark:placeholder:text-neutral-200 dark:bg-neutral-900 focus:ring-4 ${errors.name
-                    ? "border-rose-600 focus:border-rose-600 ring-rose-100 dark:ring-0"
+                    ? "border-rose-500 focus:border-rose-500 ring-rose-100 dark:ring-0"
                     : "border-neutral-300 focus:border-neutral-600 ring-neutral-100 dark:border-neutral-600 dark:focus:border-white dark:ring-0"
                     }`}
                   {...register("name", {
@@ -132,7 +132,7 @@ export default function Contact() {
                   })}
                 />
                 {errors.name && (
-                  <div className="mt-1 text-rose-600">
+                  <div className="mt-1 text-rose-500">
                     <small>{errors.name.message}</small>
                   </div>
                 )}
@@ -149,7 +149,7 @@ export default function Contact() {
                   name="email"
                   autoComplete="false"
                   className={`w-full px-4 py-3 border-2 placeholder:text-neutral-800 dark:text-white rounded-md outline-none dark:placeholder:text-neutral-200 dark:bg-neutral-900   focus:ring-4  ${errors.email
-                    ? "border-rose-600 focus:border-rose-600 ring-rose-100 dark:ring-0"
+                    ? "border-rose-500 focus:border-rose-500 ring-rose-100 dark:ring-0"
                     : "border-neutral-300 focus:border-neutral-600 ring-neutral-100 dark:border-neutral-600 dark:focus:border-white dark:ring-0"
                     }`}
                   {...register("email", {
@@ -161,7 +161,7 @@ export default function Contact() {
                   })}
                 />
                 {errors.email && (
-                  <div className="mt-1 text-red-600">
+                  <div className="mt-1 text-rose-500">
                     <small>{errors.email.message}</small>
                   </div>
                 )}
@@ -172,13 +172,13 @@ export default function Contact() {
                   name="message"
                   placeholder="Your Message"
                   className={`w-full px-4 py-3 border-2 placeholder:text-neutral-800 dark:text-white dark:placeholder:text-neutral-200 dark:bg-neutral-900   rounded-md outline-none  h-36 focus:ring-4  ${errors.message
-                    ? "border-rose-600 focus:border-rose-600 ring-rose-100 dark:ring-0"
+                    ? "border-rose-500 focus:border-rose-500 ring-rose-100 dark:ring-0"
                     : "border-neutral-300 focus:border-neutral-600 ring-neutral-100 dark:border-neutral-600 dark:focus:border-white dark:ring-0"
                     }`}
                   {...register("message", { required: "Enter your Message" })}
                 />
                 {errors.message && (
-                  <div className="mt-1 text-red-600">
+                  <div className="mt-1 text-rose-500">
                     {" "}
                     <small>{errors.message.message}</small>
                   </div>
@@ -187,9 +187,10 @@ export default function Contact() {
 
               <button
                 type="submit"
-                className="w-full py-4 font-semibold text-white transition-colors bg-neutral-900 rounded-md hover:bg-neutral-800 focus:outline-none focus:ring-offset-2 focus:ring focus:ring-neutral-200 px-7 dark:bg-white dark:text-black ">                {isSubmitting ? (
+                className="w-full py-4 font-semibold text-white transition-colors bg-neutral-900 rounded-md hover:bg-neutral-800 focus:outline-none focus:ring-offset-2 focus:ring focus:ring-neutral-200 px-7 dark:bg-white dark:text-black ">
+                {isSubmitting ? (
                   <svg
-                    className="w-5 h-5 mx-auto text-white animate-spin"
+                    className="w-5 h-5 mx-auto text-white dark:text-neutral-900 animate-spin"
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
                     viewBox="0 0 24 24">
@@ -211,13 +212,14 @@ export default function Contact() {
               </button>
             </form>
           )}
+
           {isSubmitSuccessful && isSuccess && (
             <>
               <div className="flex flex-col items-center justify-center text-center text-white rounded-md">
                 <svg
                   width="100"
                   height="100"
-                  className="text-green-300"
+                  className="text-green-500"
                   viewBox="0 0 100 100"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg">
@@ -227,10 +229,10 @@ export default function Contact() {
                     strokeWidth="3"
                   />
                 </svg>
-                <h3 className="py-5 text-2xl text-green-500">Success</h3>
-                <p className="text-neutral-700 md:px-3">{Message}</p>
+                <h3 className="py-5 text-2xl font-medium text-green-500">Success</h3>
+                <p className="text-neutral-900 dark:text-neutral-300 md:px-4">{Message}</p>
                 <button
-                  className="mt-6 text-neutral-600 focus:outline-none"
+                  className="mt-6 py-2 px-4 bg-rose-500 rounded-full focus:outline-none text-neutral-100"
                   onClick={() => reset()}>
                   Go back
                 </button>
@@ -239,12 +241,12 @@ export default function Contact() {
           )}
 
           {isSubmitSuccessful && !isSuccess && (
-            <div className="flex flex-col items-center justify-center text-center text-white rounded-md">
+            <div className="flex flex-col items-center justify-center text-center text-neutral-900 dark:text-neutral-300 rounded-md">
               <svg
                 width="97"
                 height="97"
                 viewBox="0 0 97 97"
-                className="text-rose-400"
+                className="text-rose-500"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg">
                 <path
@@ -254,15 +256,16 @@ export default function Contact() {
                 />
               </svg>
 
-              <h3 className="text-2xl text-red-400 py-7">
+              <h3 className=" py-5 text-2xl font-medium text-rose-500">
                 Oops, Something went wrong!
               </h3>
-              <p className="text-gray-300 md:px-3">{Message}</p>
-              <button className="mt-5 focus:outline-none" onClick={() => reset()}>
+              <p className="text-neutral-900 dark:text-neutral-300 md:px-4">{Message}</p>
+              <button className="mt-6 py-2 px-4 bg-rose-500 rounded-full focus:outline-none text-neutral-100" onClick={() => reset()}>
                 Try Again
               </button>
             </div>
           )}
+
         </div>
       </div>
     </div >
