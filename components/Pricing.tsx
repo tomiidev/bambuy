@@ -174,7 +174,7 @@ export default function Pricing() {
                     className={`${billingInterval === 'month'
                         ? 'relative w-1/2 bg-white dark:bg-neutral-600 text-black dark:text-white'
                         : 'ml-0.5 relative w-1/2 text-black dark:text-neutral-400'
-                        } rounded-lg m-1 py-2 text-sm font-medium whitespace-nowrap focus:outline-none sm:w-auto sm:px-8`}
+                        } rounded-lg m-1 py-2 text-base font-medium whitespace-nowrap focus:outline-none sm:w-auto sm:px-8`}
                 >
                     Monthly billing
                 </button>
@@ -184,7 +184,7 @@ export default function Pricing() {
                     className={`${billingInterval === 'year'
                         ? 'relative w-1/2 bg-white dark:bg-neutral-600 text-black dark:text-white'
                         : 'ml-0.5 relative w-1/2 text-black dark:text-neutral-400'
-                        } rounded-lg m-1 py-2 text-sm font-medium whitespace-nowrap focus:outline-none sm:w-auto sm:px-8`}
+                        } rounded-lg m-1 py-2 text-base font-medium whitespace-nowrap focus:outline-none sm:w-auto sm:px-8`}
                 >
                     Yearly billing
                 </button>
