@@ -67,7 +67,7 @@ export default function Contact() {
       });
   };
   return (
-    <div className="bg-gray-50 dark:bg-neutral-800" id="contact">
+    <div className="bg-gray-50 dark:bg-neutral-900" id="contact">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 text-center">
         <h2 className="text-4xl font-bold">Contact</h2>
 
