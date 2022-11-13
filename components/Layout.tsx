@@ -1,16 +1,16 @@
-import Head from 'next/head';
-import { useRouter } from 'next/router';
+import Head from "next/head";
+import { useRouter } from "next/router";
 
-import { ReactNode } from 'react';
-import Footer from './Footer';
-import Navbar from './Navbar';
-import Prefooter from './Prefooter';
+import { ReactNode } from "react";
+import Footer from "./Footer";
+import Navbar from "./Navbar";
+import Prefooter from "./Prefooter";
 
 type PageMeta = {
   title: string;
   description: string;
   cardImage: string;
-}
+};
 
 interface Props {
   children: ReactNode;
@@ -20,10 +20,11 @@ interface Props {
 export default function Layout({ children, meta: pageMeta }: Props) {
   const router = useRouter();
   const meta = {
-    title: 'Halley',
-    description: 'Halley is a landing page template built with Nextjs and Tailwindcss',
-    cardImage: '/images/seo/halley-banner.png',
-    ...pageMeta
+    title: "Halley",
+    description:
+      "Halley is a landing page template built with Nextjs and Tailwindcss",
+    cardImage: "/images/seo/halley-banner.png",
+    ...pageMeta,
   };
 
   return (
@@ -33,7 +34,10 @@ export default function Layout({ children, meta: pageMeta }: Props) {
         <meta name="robots" content="follow, index" />
         <link href="/favicon.ico" rel="shortcut icon" />
         <meta content={meta.description} name="description" />
-        <meta property="og:url" content={`https://halley.vercel.app${router.asPath}`} />
+        <meta
+          property="og:url"
+          content={`https://halley.vercel.app${router.asPath}`}
+        />
         <meta property="og:type" content="website" />
         <meta property="og:site_name" content={meta.title} />
         <meta property="og:description" content={meta.description} />
