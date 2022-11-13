@@ -1,6 +1,6 @@
-/** @type {import('tailwindcss').Config} */
-const defaultTheme = require("tailwindcss/defaultTheme");
+const { fontFamily } = require('tailwindcss/defaultTheme')
 
+/** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
     "./pages/**/*.{js,ts,jsx,tsx}",
@@ -10,10 +10,9 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        // to change, update font in _document.tsx
-        sans: ["Roboto", ...defaultTheme.fontFamily.sans],
+        sans: ["var(--font-inter)", ...fontFamily.sans],
       },
     },
   },
   plugins: [],
-}
+};

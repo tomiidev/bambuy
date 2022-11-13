@@ -35,6 +35,7 @@ export function Hero() {
                         height={662}
                         quality={75}
                         sizes="100vw"
+                        priority
                     />
                 </div>
             </div>
