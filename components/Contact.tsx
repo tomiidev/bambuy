@@ -5,6 +5,16 @@ import { HiOutlineLocationMarker } from "react-icons/hi";
 import { MdOutlineMail } from "react-icons/md";
 import { HiOutlinePhone } from "react-icons/hi";
 
+type Info = {
+  access_key: string;
+  subject: string;
+  from_name: string;
+  botcheck: string;
+  name: string;
+  email: string;
+  message: string;
+};
+
 export default function Contact() {
   const {
     register,
@@ -13,9 +23,10 @@ export default function Contact() {
     reset,
     control,
     formState: { errors, isSubmitSuccessful, isSubmitting },
-  } = useForm({
+  } = useForm<Info, any>({
     mode: "onTouched",
   });
+
   const [isSuccess, setIsSuccess] = React.useState(false);
   const [Message, setMessage] = React.useState("");
 
@@ -99,11 +110,7 @@ export default function Contact() {
                 {...register("access_key")}
               />
               <input type="hidden" {...register("subject")} />
-              <input
-                type="hidden"
-                value="Halley"
-                {...register("from_name")}
-              />
+              <input type="hidden" value="Halley" {...register("from_name")} />
               <input
                 type="checkbox"
                 id=""
@@ -177,7 +184,6 @@ export default function Contact() {
                 />
                 {errors.message && (
                   <div className="mt-1 text-rose-500">
-                    {" "}
                     <small>{errors.message.message}</small>
                   </div>
                 )}
