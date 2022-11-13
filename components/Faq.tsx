@@ -16,7 +16,7 @@ export default function Faq() {
                     {({ open }) => (
                         <>
                             <Disclosure.Button className={`${open ? 'bg-neutral-100 dark:bg-neutral-800 hover:bg-neutral-100 rounded-b-none' : ''} flex w-full justify-between rounded-lg bg-neutral-100 dark:bg-neutral-800 dark:hover:bg-neutral-800 px-4 py-4 text-left text-base font-medium `}>
-                                <span>What is your refund policy?</span>
+                                <span className="font-semibold">What is your refund policy?</span>
                                 <RiArrowUpSLine
                                     className={`${open ? 'rotate-180 transition-transform' : ''
                                         } h-5 w-5`}
@@ -33,7 +33,7 @@ export default function Faq() {
                     {({ open }) => (
                         <>
                             <Disclosure.Button className={`${open ? 'bg-neutral-100 dark:bg-neutral-800 hover:bg-neutral-100 rounded-b-none' : ''} flex w-full justify-between rounded-lg bg-neutral-100 dark:bg-neutral-800 dark:hover:bg-neutral-800 px-4 py-4 text-left text-base font-medium `}>
-                                <span>Do you offer technical support?</span>
+                                <span className="font-semibold">Do you offer technical support?</span>
                                 <RiArrowUpSLine
                                     className={`${open ? 'rotate-180 transition-transform' : ''
                                         } h-5 w-5`}
@@ -49,7 +49,7 @@ export default function Faq() {
                     {({ open }) => (
                         <>
                             <Disclosure.Button className={`${open ? 'bg-neutral-100 dark:bg-neutral-800 hover:bg-neutral-100 rounded-b-none' : ''} flex w-full justify-between rounded-lg bg-neutral-100 dark:bg-neutral-800 dark:hover:bg-neutral-800 px-4 py-4 text-left text-base font-medium `}>
-                                <span>What is your refund policy?</span>
+                                <span className="font-semibold">What is your refund policy?</span>
                                 <RiArrowUpSLine
                                     className={`${open ? 'rotate-180 transition-transform' : ''
                                         } h-5 w-5`}
@@ -65,7 +65,7 @@ export default function Faq() {
                     {({ open }) => (
                         <>
                             <Disclosure.Button className={`${open ? 'bg-neutral-100 dark:bg-neutral-800 hover:bg-neutral-100 rounded-b-none' : ''} flex w-full justify-between rounded-lg bg-neutral-100 dark:bg-neutral-800 dark:hover:bg-neutral-800 px-4 py-4 text-left text-base font-medium `}>
-                                <span>What forms of payment do you accept?</span>
+                                <span className="font-semibold">What forms of payment do you accept?</span>
                                 <RiArrowUpSLine
                                     className={`${open ? 'rotate-180 transition-transform' : ''
                                         } h-5 w-5`}
