@@ -1,9 +1,10 @@
-import { Disclosure, Menu, Transition } from '@headlessui/react'
-import { FiMenu } from 'react-icons/fi';
-import { RiCloseFill } from 'react-icons/ri';
 import Link from 'next/link';
 import Image from 'next/image';
 import ThemeSwitchButton from './ThemeSwitchButton';
+
+import { Disclosure } from '@headlessui/react'
+import { FiMenu } from 'react-icons/fi';
+import { RiCloseFill } from 'react-icons/ri';
 
 const navigation = [
   { name: 'Home', href: '/', current: true },
