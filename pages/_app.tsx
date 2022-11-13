@@ -1,18 +1,17 @@
 import "../styles/globals.css";
-import { Roboto } from "@next/font/google";
 import { ThemeProvider } from "next-themes";
 import type { AppProps } from "next/app";
+import { Inter } from "@next/font/google";
+import { Analytics } from "@vercel/analytics/react";
 
-const roboto = Roboto({
-  weight:"300",  
-  variable: '--font-roboto',
-})
+const interVariable = Inter();
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
     <ThemeProvider attribute="class">
-      <main className={roboto.className}>
+      <main className={interVariable.className}>
         <Component {...pageProps} />
+        <Analytics />
       </main>
     </ThemeProvider>
   );
