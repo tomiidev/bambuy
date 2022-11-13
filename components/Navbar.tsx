@@ -7,7 +7,7 @@ import { FiMenu } from 'react-icons/fi';
 import { RiCloseFill } from 'react-icons/ri';
 
 const navigation = [
-  { name: 'Home', href: '/', current: true },
+  { name: 'Home', href: '/', current: false },
   { name: 'Services', href: '#services', current: false },
   { name: 'Pricing', href: '#pricing', current: false },
   { name: 'Faq', href: '#faq', current: false },
@@ -30,7 +30,7 @@ export default function Navbar() {
                 <div className="flex flex-shrink-0 items-center md:pl-0">
                   <Link href="/">
                     <Image
-                      className="block h-8 w-auto lg:hidden"
+                      className="block h-8 w-auto"
                       src="/images/logos/logo-rose.svg"
                       alt="Logo Your Company"
                       width={150}
@@ -38,19 +38,6 @@ export default function Navbar() {
                       quality={75}
                       sizes="100vw"
                     />
-                  </Link>
-
-                  <Link href="/">
-                    <Image
-                      className="hidden h-8 w-auto lg:block"
-                      src="/images/logos/logo-rose.svg"
-                      alt="Logo Your Company"
-                      width={150}
-                      height={150}
-                      quality={75}
-                      sizes="100vw"
-                    />
-
                   </Link>
                 </div>
 
