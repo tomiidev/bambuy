@@ -50,7 +50,7 @@ export default function Faq() {
                       : ""
                   } flex w-full justify-between rounded-lg bg-neutral-100 dark:bg-neutral-800 dark:hover:bg-neutral-800 px-4 py-4 text-left text-base font-medium `}
                 >
-                  <h2 className="font-semibold">{question}</h2>
+                  <h2 key={question} className="font-semibold">{question}</h2>
                   <RiArrowUpSLine
                     className={`${
                       open ? "rotate-180 transition-transform" : ""
@@ -62,7 +62,7 @@ export default function Faq() {
                     open ? "px-4 pt-4 pb-2 text-base dark:text-neutral-400" : ""
                   } bg-neutral-100 dark:bg-neutral-800 rounded-b-lg`}
                 >
-                  <p>{response}</p>
+                  <p key={question}>{response}</p>
                 </Disclosure.Panel>
               </div>
             )}
