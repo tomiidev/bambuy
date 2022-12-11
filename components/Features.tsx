@@ -86,6 +86,7 @@ export function Features() {
                   height={1080}
                   quality={75}
                   sizes="100vw"
+                  priority
                 />
               </div>
 

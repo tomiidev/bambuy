@@ -1,34 +1,22 @@
 import Head from "next/head";
 import { useRouter } from "next/router";
 
-import { ReactNode } from "react";
 import Footer from "./Footer";
 import Navbar from "./Navbar";
 import Prefooter from "./Prefooter";
 
-type PageMeta = {
-  title: string;
-  description: string;
-  cardImage: string;
-};
-
-interface Props {
-  children: ReactNode;
-  meta?: PageMeta;
-}
-
-export default function Layout({ children, meta: pageMeta }: Props) {
+const Layout = (props) => {
+  const { children, ...customMeta } = props;
   const router = useRouter();
   const meta = {
     title: "Halley",
-    description:
-      "Halley is a landing page template built with Nextjs and Tailwindcss",
-    cardImage: "/images/seo/halley-banner.png",
-    ...pageMeta,
+    description: `Halley is a landing page template built with Nextjs and Tailwindcss`,
+    image: "/images/seo/halley-banner.png",
+    type: "website",
+    ...customMeta,
   };
-
   return (
-    <div className="min-w-[350px]">
+    <div className="min-w-[350px] overflow-x-hidden">
       <Head>
         <title>{meta.title}</title>
         <meta name="robots" content="follow, index" />
@@ -49,10 +37,15 @@ export default function Layout({ children, meta: pageMeta }: Props) {
         <meta name="twitter:description" content={meta.description} />
         <meta name="twitter:image" content={meta.cardImage} />
       </Head>
-      <Navbar />
-      <main id="skip">{children}</main>
-      <Prefooter />
-      <Footer />
+
+      <main id="skip" className="bg-white dark:bg-neutral-900">
+        <Navbar />
+        {children}
+        <Prefooter />
+        <Footer />
+      </main>
     </div>
   );
-}
+};
+
+export default Layout;

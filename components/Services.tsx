@@ -59,7 +59,7 @@ export function Services() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 pb-16 grid md:grid-cols-2 lg:grid-cols-3 gap-y-8 md:gap-x-8 md:gap-y-8 lg:gap-x-8 lg:gap-y-16">
         {services.map(({ title, description, image, alt }) => (
           <div key={title}>
-            <div className="h-32 w-auto flex place-content-center">
+            <div className="h-32 w-32 flex justify-center mx-auto">
               <Image
                 src={image}
                 alt={alt}

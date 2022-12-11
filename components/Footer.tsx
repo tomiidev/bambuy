@@ -40,15 +40,15 @@ const column1 = [
 
 const column2 = [
   { name: 'Not Found 404', href: '404' },
-  { name: 'Documentation', href: '#' },
-  { name: 'Guides', href: '#' },
-  { name: 'Help', href: '#' },
+  { name: 'Documentation', href: '/' },
+  { name: 'Guides', href: '/' },
+  { name: 'Help', href: '/' },
 ]
 
 const column3 = [
-  { name: 'Privacy Policy', href: '#' },
-  { name: 'Terms of Service', href: '#' },
-  { name: 'Support Terms', href: '#' },
+  { name: 'Privacy Policy', href: '/' },
+  { name: 'Terms of Service', href: '/' },
+  { name: 'Support Terms', href: '/' },
 ]
 
 export default function Footer() {
@@ -68,7 +68,7 @@ export default function Footer() {
             />
           </Link>
 
-          <p className="text-sm pt-4 w-auto sm:w-6/12 md:w-6/12 lg:w-8/12">Halley is ipsum dolor sit amet consectetur adipisicing itaque enim labore dolores culpa consequatur harum.</p>
+          <p className="md:text-sm pt-4 w-auto sm:w-6/12 md:w-6/12 lg:w-8/12">Halley is ipsum dolor sit amet consectetur adipisicing itaque enim labore dolores culpa consequatur harum.</p>
 
           <div className="flex gap-2 pt-6 sm:pt-6 md:pt-6 lg:pt-12 max-w-[300px]">
             {social.map((red) => (
@@ -83,36 +83,36 @@ export default function Footer() {
         </div>
 
         <div>
-          <h3 className="text-xs font-bold pb-4 pt-12 lg:pt-0">COMPANY</h3>
+          <h3 className="text-sm md:text-xs font-bold pb-4 pt-12 lg:pt-0">COMPANY</h3>
           {column1.map((item) => (
             <Link
               key={item.name}
               href={item.href}
-              className="hover:text-rose-500 text-sm pt-2 grid">
+              className="hover:text-rose-500 md:text-sm my-4 grid">
               {item.name}
             </Link>
           ))}
         </div>
 
         <div>
-          <h3 className="text-xs font-bold pb-4 pt-12 lg:pt-0">RESOURCES</h3>
+          <h3 className="text-sm md:text-xs font-bold pb-4 pt-12 lg:pt-0">RESOURCES</h3>
           {column2.map((item) => (
             <Link
               key={item.name}
               href={item.href}
-              className="hover:text-rose-500 text-sm pt-2 grid">
+              className="hover:text-rose-500 md:text-sm my-4 grid">
               {item.name}
             </Link>
           ))}
         </div>
 
         <div>
-          <h3 className="text-xs font-bold pb-4 pt-12 lg:pt-0">LEGAL</h3>
+          <h3 className="text-sm md:text-xs font-bold pb-4 pt-12 lg:pt-0">LEGAL</h3>
           {column3.map((item) => (
             <Link
               key={item.name}
               href={item.href}
-              className="hover:text-rose-500 text-sm pt-2 grid">
+              className="hover:text-rose-500 md:text-sm my-4 grid">
               {item.name}
             </Link>
           ))}
