@@ -19,9 +19,7 @@ export default function Contact() {
   const {
     register,
     handleSubmit,
-    setValue,
     reset,
-    control,
     formState: { errors, isSubmitSuccessful, isSubmitting },
   } = useForm<Info, any>({
     mode: "onTouched",
@@ -29,14 +27,6 @@ export default function Contact() {
 
   const [isSuccess, setIsSuccess] = React.useState(false);
   const [Message, setMessage] = React.useState("");
-
-  const userName = useWatch({
-    control,
-    name: "name",
-    defaultValue: "Someone",
-  });
-
-  setValue("subject", `${userName} envió un mensaje desde el sitio web Halley`);
 
   const onSubmit = async (data: any, e: any) => {
     console.log(data);
