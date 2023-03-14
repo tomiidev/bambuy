@@ -72,7 +72,7 @@ export default function Footer() {
           <Link href="/">
             <Image
               className="h-8 w-auto"
-              src="/images/logos/logo-white.svg"
+              src="/images/logos/logo-rose.svg"
               alt="Logo Your Company"
               width={150}
               height={150}
@@ -89,7 +89,7 @@ export default function Footer() {
           <div className="flex gap-2 pt-6 sm:pt-6 md:pt-6 lg:pt-12 max-w-[300px]">
             {social.map((red) => (
               <Link key={red.name} href={red.href} target="_blank">
-                <div className="w-9 h-9 text-white bg-neutral-600 hover:opacity-75 rounded-full flex items-center justify-center">
+                <div className="w-9 h-9 p-2 text-white bg-rose-500 hover:opacity-75 rounded-full flex items-center justify-center">
                   {red.icon}
                 </div>
               </Link>
