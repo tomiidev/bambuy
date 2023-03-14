@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { useState } from "react";
-import { FaCheck } from "react-icons/fa";
+import { CheckIcon } from "@heroicons/react/24/solid";
 
 const products = [
   {
@@ -167,8 +167,8 @@ export default function Pricing() {
         </p>
       </div>
 
-      <div className="sm:flex sm:flex-col sm:align-center">
-        <div className="relative self-center mt-6 bg-neutral-200  dark:bg-neutral-800 rounded-lg flex sm:mt-8">
+      <div className="mx-auto px-4 sm:px-6 lg:px-8 sm:flex sm:flex-col sm:align-center">
+        <div className="relative self-center text-base font-semibold mt-6 bg-neutral-200  dark:bg-neutral-800 rounded-lg flex sm:mt-8">
           <button
             onClick={() => setBillingInterval("month")}
             type="button"
@@ -176,7 +176,7 @@ export default function Pricing() {
               billingInterval === "month"
                 ? "relative w-1/2 bg-white dark:bg-neutral-600 text-neutral-900 dark:text-neutral-100"
                 : "ml-0.5 relative w-1/2 text-neutral-900 dark:text-neutral-400"
-            } rounded-md m-1 py-2 text-sm font-medium whitespace-nowrap sm:w-auto sm:px-8`}
+            } rounded-md m-1 py-2 whitespace-nowrap sm:w-auto sm:px-8`}
           >
             Monthly billing
           </button>
@@ -187,7 +187,7 @@ export default function Pricing() {
               billingInterval === "year"
                 ? "relative w-1/2 bg-white dark:bg-neutral-600 text-neutral-900 dark:text-neutral-100"
                 : "ml-0.5 relative w-1/2 text-neutral-900 dark:text-neutral-400"
-            } rounded-md m-1 py-2 text-sm font-medium whitespace-nowrap sm:w-auto sm:px-8`}
+            } rounded-md m-1 py-2 whitespace-nowrap sm:w-auto sm:px-8`}
           >
             Yearly billing
           </button>
@@ -258,7 +258,7 @@ export default function Pricing() {
                       </p>
                       {features.map((features) => (
                         <li key={features} className="leading-6 flex">
-                          <FaCheck className="mt-2 w-3 h-3 text-rose-500 shrink-0" />
+                          <CheckIcon className="mt-2 w-3 h-3 text-rose-500 shrink-0" />
                           <span className="ml-3 dark:text-neutral-400">
                             {features}
                           </span>

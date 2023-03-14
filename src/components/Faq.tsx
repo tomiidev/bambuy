@@ -1,5 +1,5 @@
 import { Disclosure } from "@headlessui/react";
-import { RiArrowUpSLine } from "react-icons/ri";
+import { ChevronDownIcon } from "@heroicons/react/24/solid";
 
 const faqitems = [
   {
@@ -52,7 +52,7 @@ export default function Faq() {
                     } flex w-full justify-between rounded-lg bg-neutral-100 dark:bg-neutral-800 dark:hover:bg-neutral-800 px-4 py-4 text-left text-base font-medium `}
                   >
                     <h2 className="font-semibold">{question}</h2>
-                    <RiArrowUpSLine
+                    <ChevronDownIcon
                       className={`${
                         open ? "rotate-180 transition-transform" : ""
                       } h-5 w-5`}

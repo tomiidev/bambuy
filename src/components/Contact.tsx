@@ -1,9 +1,9 @@
 import React from "react";
 import { useForm, useWatch } from "react-hook-form";
 
-import { HiOutlineLocationMarker } from "react-icons/hi";
-import { MdOutlineMail } from "react-icons/md";
-import { HiOutlinePhone } from "react-icons/hi";
+import { MapIcon } from "@heroicons/react/24/outline";
+import { EnvelopeIcon } from "@heroicons/react/24/outline";
+import { PhoneIcon } from "@heroicons/react/24/outline";
 
 type Info = {
   access_key: string;
@@ -76,17 +76,17 @@ export default function Contact() {
           </p>
 
           <div className="flex items-center mt-8 space-x-2 text-dark-600 dark:text-neutral-400">
-            <HiOutlineLocationMarker className="w-4 h-4" />
+            <MapIcon className="w-4 h-4" />
             <span>Av Tomas Marsano 700, Lima - Perú</span>
           </div>
 
           <div className="flex items-center mt-2 space-x-2 text-dark-600 dark:text-neutral-400">
-            <MdOutlineMail className="w-4 h-4" />
+            <EnvelopeIcon className="w-4 h-4" />
             <a href="mailto:hello@halley.vercel.app">hello@halley.vercel.app</a>
           </div>
 
           <div className="flex items-center mt-2 space-x-2 text-dark-600 dark:text-neutral-400">
-            <HiOutlinePhone className="w-4 h-4" />
+            <PhoneIcon className="w-4 h-4" />
             <a href="tel:51931999999">+51 931999999</a>
           </div>
         </div>
