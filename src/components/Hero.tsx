@@ -11,24 +11,21 @@ export function Hero() {
             <span className="text-rose-500 font-extrabold">Halley</span>
           </h1>
           <p className="pt-6 text-base w-auto sm:w-10/12 md:w-10/12 dark:text-neutral-400">
-            Plantilla de landing page gratuita desarrollada con Next.js,
-            TypeScript y TailwindCSS. Personalizable y cuenta con secciones para
-            mostrar información importante sobre un producto o servicio.
+            Template Single Page Application (SPA) développé avec Next.js,
+            TypeScript et TailwindCSS. Personnalisable et a des sections pour
+            afficher des informations importantes sur un produit ou un service.
           </p>
           <div className="flex flex-auto pt-10 gap-2 min-w-[350px] justify-center sm:justify-start">
             <div>
-              <Link href="https://github.com/humberni/halley" target="_blank">
+              <Link href="#services">
                 <button className="bg-black dark:bg-white text-white dark:text-black text-base rounded-full px-4 p-2 font-medium">
-                  Clone repository
+                  Read more
                 </button>
               </Link>
             </div>
 
             <div>
-              <Link
-                href="https://github.com/humberni/halley/blob/main/README.md"
-                target="_blank"
-              >
+              <Link href="/docs" target="_blank">
                 <button className="bg-rose-500 text-white text-base rounded-full px-4 p-2 font-medium">
                   Documentation
                 </button>
