@@ -324,6 +324,19 @@ export default function Docs() {
             Una vez que el despliegue esté completo, Vercel te proporcionará una
             URL donde podrás ver tu proyecto en línea.
           </li>
+          <li>
+            Finalmente solo toca configurar el entorno de variables en vercel y
+            añadir un dominio personalizado si se requiere en la sección
+            dominios de vercel
+            <Image
+              src="/images/docs/envproduction.jpg"
+              alt=""
+              width={1920}
+              height={1080}
+              quality={75}
+              sizes="100vw"
+            />
+          </li>
         </ul>{" "}
         <br />
         <br />
@@ -336,7 +349,9 @@ export default function Docs() {
           >
             https://nextjs.org/docs/deployment
           </Link>{" "}
-        </p> <br /><br />
+        </p>{" "}
+        <br />
+        <br />
         <p>
           Soporte:{" "}
           <Link
