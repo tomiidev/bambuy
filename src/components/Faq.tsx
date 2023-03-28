@@ -13,7 +13,7 @@ const faqitems = [
       "No, we dont offer technical support for free downloads. Please purchase a support plan to get 6 months of support.",
   },
   {
-    question: "What is your refund policy?",
+    question: "What is your refund policy? If youre unhappy with your purchase for any reasonIf youre unhappy with your purchase for any reasonIf youre unhappy with your purchase for any reason",
     response:
       "If youre unhappy with your purchase for any reason, email us within 90 days and well refund you in full, no questions asked.",
   },
@@ -55,7 +55,7 @@ export default function Faq() {
                     <ChevronDownIcon
                       className={`${
                         open ? "rotate-180 transition-transform" : ""
-                      } h-5 w-5`}
+                      } h-5 w-5 flex-shrink-0`}
                     />
                   </Disclosure.Button>
                   <Disclosure.Panel
