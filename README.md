@@ -59,6 +59,6 @@ Este proyecto se encuentra bajo la Licencia MIT.
 
 # 💻 Desarrollador
 - Humber Sanchez Nieto
-- https://humbersanchez.com
+- https://humbernieto.pro/
 
 ¡Gracias por utilizar esta plantilla! Si tienes alguna pregunta o sugerencia, no dudes en crear un issue o contactar al desarrollador principal.
