@@ -16,7 +16,7 @@ export default function Home() {
       <Pricing />
       <Faq />
       <Contact />
-      <Customers />
+     {/*  <Customers /> */}
     </Layout>
   );
 }

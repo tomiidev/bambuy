@@ -7,11 +7,11 @@ import { Bars3Icon } from "@heroicons/react/24/solid";
 import { XMarkIcon } from "@heroicons/react/24/solid";
 
 const navigation = [
-  { name: "Home", href: "/", current: false },
-  { name: "Services", href: "#services", current: false },
-  { name: "Pricing", href: "#pricing", current: false },
-  { name: "Faq", href: "#faq", current: false },
-  { name: "Contact", href: "#contact", current: false },
+  { name: "Inicio", href: "/", current: false },
+  { name: "Servicios", href: "#services", current: false },
+
+  { name: "Preguntas", href: "#faq", current: false },
+  { name: "Contacto", href: "#contact", current: false },
 ];
 
 function classNames(...classes: any) {
@@ -31,15 +31,7 @@ export default function Navbar() {
               <div className="flex flex-1 items-center justify-start">
                 <div className="flex flex-shrink-0 items-center md:pl-0">
                   <Link href="/">
-                    <Image
-                      className="block h-8 w-auto"
-                      src="/images/logos/logo-rose.svg"
-                      alt="Logo Your Company"
-                      width={150}
-                      height={150}
-                      quality={75}
-                      sizes="100vw"
-                    />
+                 ALGORIX
                   </Link>
                 </div>
 
@@ -64,15 +56,7 @@ export default function Navbar() {
                 </div>
 
                 <div className="absolute inset-y-0 right-10 sm:right-0 flex items-center gap-2">
-                  <Link
-                    href="https://github.com/humberni/halley"
-                    target="_blank"
-                    className="hidden sm:block"
-                  >
-                    <button className="bg-neutral-900 dark:bg-white text-white dark:text-neutral-900 px-4 p-2 text-base font-medium dark:hover:bg-rose-500 hover:bg-rose-500 hover:text-white dark:hover:text-white rounded-full">
-                      GitHub
-                    </button>
-                  </Link>
+             
                   <ThemeSwitchButton />
                 </div>
 
@@ -109,11 +93,7 @@ export default function Navbar() {
                   {item.name}
                 </Disclosure.Button>
               ))}
-              <Link href="https://github.com/humberni/halley" target="_blank">
-                <button className="mt-12 bg-rose-500 text-white px-4 p-3 font-medium rounded-full w-full">
-                  GitHub
-                </button>
-              </Link>
+         
             </div>
           </Disclosure.Panel>
         </>

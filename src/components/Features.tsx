@@ -3,37 +3,37 @@ import { CheckIcon } from "@heroicons/react/24/solid";
 
 const contents = [
   {
-    title: "Dashboard",
+    title: "Personalización",
     description:
-      "Euismod fames in felis ornare interdum phasellus imperdiet habitant, elementum leo lobortis facilisis suscipit nullam.",
+      "Sumergite en una experiencia adaptada a tus preferencias.",
     features: [
-      "Lacus eu mauris quisque tortor torquent",
-      "Lorem ipsum dolor sit amet consectetur",
-      "Lacus eu mauris quisque tortor torquent",
+      "Configuración a medida",
+      "Contenido relevante en tiempo real",
+      "Flujo de trabajo personalizable",
     ],
     image: "/images/features/dashboard.svg",
     order: false,
   },
   {
-    title: "Products",
+    title: "Interfaz de usuario intuitiva",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga natus at modi ea tempore sapiente optio, quas sint nobis pariatur.",
+      "Pensamos la solución en su totalidad para que sea lo mas amena posible al trabajo diario o vista diaria.",
     features: [
-      "But I must explain to you how all this mistaken",
-      "Voluptatum deleniti atque corrupti quos",
-      "He endures pains to avoid worse pains",
+      "Navegación sencilla",
+      "Flujo de trabajo eficiente",
+      "Interfaz moderna",
     ],
     image: "/images/features/product.svg",
     order: true,
   },
   {
-    title: "Inventory",
+    title: "Soporte",
     description:
-      "Porta facilisis ullamcorper rutrum erat luctus aliquam phasellus pharetra fusce, aliquet montes turpis mus habitasse lectus lacinia.",
+      "En el núcleo de nuestra oferta, se encuentra nuestro compromiso con un soporte excepcional, diseñado para impulsar tu éxito y tranquilidad.",
     features: [
-      "Sed ut perspiciatis unde omnis iste natus",
-      "Quis autem vel eum iure reprehenderit",
-      "Consequuntur magni dolores eos qui ratione",
+      "Asistencia personalizada",
+      "Tiempo de respuesta rápido",
+
     ],
     image: "/images/features/inventory.svg",
     order: false,
@@ -44,10 +44,9 @@ export function Features() {
   return (
     <div className="bg-white dark:bg-neutral-900" id="features">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 gap-x-40 pt-16 pb-16">
-        <h2 className="text-4xl font-bold text-center">Features</h2>
+        <h2 className="text-4xl font-bold text-center">Digitalizate</h2>
         <p className="pt-6 text-base max-w-2xl text-center m-auto dark:text-neutral-400">
-          Halley nunc pulvinar lobortis duis. Leo mollis neque ullamcorper
-          aliquam sem nullam, elementum vestibulum augue placerat.
+        Transforma tu futuro empresarial hoy mismo: ¡Digitalízate y lleva tu empresa al siguiente nivel de innovación y eficiencia!
         </p>
 
         {contents.map((content) => (

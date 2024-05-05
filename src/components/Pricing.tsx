@@ -158,7 +158,7 @@ export default function Pricing() {
     useState<BillingInterval>("month");
   return (
     <div className="bg-gray-50 dark:bg-neutral-900" id="pricing">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-16">
+     {/*  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-16">
         <h2 className="text-4xl font-bold text-center">Pricing</h2>
 
         <p className="pt-6 text-base max-w-2xl text-center m-auto dark:text-neutral-400">
@@ -238,7 +238,7 @@ export default function Pricing() {
                       </p>
                     </div>
 
-                    {/* Call to action */}
+              
                     <Link
                       href={href}
                       target="_blank"
@@ -251,7 +251,6 @@ export default function Pricing() {
                       {cta}
                     </Link>
 
-                    {/* features */}
                     <ul className="mt-6 px-6 space-y-4 flex-1 border-t border-neutral-300 dark:border-neutral-500">
                       <p className="mt-6 font-semibold dark:text-neutral-300">
                         What&apos;s included
@@ -271,7 +270,7 @@ export default function Pricing() {
             );
           }
         )}
-      </div>
+      </div> */}
     </div>
   );
 }

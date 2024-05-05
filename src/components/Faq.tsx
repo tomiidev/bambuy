@@ -3,24 +3,24 @@ import { ChevronDownIcon } from "@heroicons/react/24/solid";
 
 const faqitems = [
   {
-    question: "What is your refund policy?",
+    question: "¿Qué tipo de empresas se benefician más de sus servicios de eCommerce?",
     response:
-      "If youre unhappy with your purchase for any reason, email us within 90 days and well refund you in full, no questions asked.",
+      "Nuestros servicios de eCommerce son versátiles y adecuados para una amplia gama de empresas, desde startups hasta empresas consolidadas. Nos adaptamos a tus necesidades específicas, ya sea que estés comenzando tu presencia en línea o buscando optimizar una tienda existente.",
   },
   {
-    question: "Do you offer technical support?",
+    question: "¿Cómo personalizan las soluciones para adaptarse a las necesidades únicas de mi empresa?",
     response:
-      "No, we dont offer technical support for free downloads. Please purchase a support plan to get 6 months of support.",
+      "Entendemos que cada empresa es única. Nuestro enfoque de personalización se basa en una evaluación detallada de tus requisitos. Ya sea en el diseño de una página web, el desarrollo de una aplicación o la implementación de un sistema CRM, adaptamos nuestras soluciones para satisfacer tus objetivos específicos.",
   },
   {
-    question: "What is your refund policy? If youre unhappy with your purchase for any reasonIf youre unhappy with your purchase for any reasonIf youre unhappy with your purchase for any reason",
+    question: "¿Cómo garantizan la seguridad de la información en sus servicios de CRM?",
     response:
-      "If youre unhappy with your purchase for any reason, email us within 90 days and well refund you in full, no questions asked.",
+      "La seguridad es nuestra máxima prioridad. Implementamos prácticas de seguridad de vanguardia en todas nuestras soluciones. Nuestros servicios de CRM incluyen medidas de cifrado, gestión de accesos y copias de seguridad regulares para garantizar la protección integral de la información crítica de tu empresa.",
   },
   {
-    question: "What forms of payment do you accept?",
+    question: "¿Ofrecen soporte técnico continuo después de la implementación de sus servicios?",
     response:
-      "You can use any debit or credit card to pay for a subscription. We secure your card details and process payments via Stripe. Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
+      "Sí, nuestro compromiso no se detiene con la implementación. Ofrecemos un sólido servicio de soporte técnico para abordar cualquier pregunta o problema que puedas tener. Estamos acá para asegurarnos de que aproveches al máximo nuestras soluciones.",
   },
 ];
 
@@ -31,12 +31,11 @@ export default function Faq() {
       id="faq"
     >
       <h2 className="text-4xl font-bold text-center">
-        Frequently Asked Questions
+        Preguntas frecuentes
       </h2>
 
       <p className="pt-6 pb-16 text-base max-w-2xl text-center m-auto dark:text-neutral-400">
-        Answer your customers possible questions here, it will increase the
-        conversion rate as well as support or chat requests.
+        ¿Tenes alguna de estas dudas?
       </p>
       <div className="mx-auto w-full max-w-2xl rounded-2xl bg-transparent dark:bg-transparent">
         {faqitems.map(({ question, response }) => (

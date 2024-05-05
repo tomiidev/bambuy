@@ -1,6 +1,6 @@
-import React from "react";
+import { useEffect, useState,  } from "react";
 import { useForm, useWatch } from "react-hook-form";
-
+import emailjs from '@emailjs/browser';
 import { MapIcon } from "@heroicons/react/24/outline";
 import { EnvelopeIcon } from "@heroicons/react/24/outline";
 import { PhoneIcon } from "@heroicons/react/24/outline";
@@ -25,69 +25,70 @@ export default function Contact() {
     mode: "onTouched",
   });
 
-  const [isSuccess, setIsSuccess] = React.useState(false);
-  const [Message, setMessage] = React.useState("");
+  const [isSuccess, setIsSuccess] = useState(false);
+  const [submmited, setSubmmited] = useState(false);
+  const [Message, setMessage] = useState("");
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  
+  useEffect(() => {
+    emailjs.init("08fNNRHbImpLQ7mtt");
+  }, []); // El segundo parámetro vacío asegura que el efecto se ejecute solo una vez al montar el componente
 
+  const resetear =() => {
+    setName("");
+    setEmail("");
+    setMessage("");
+    setIsSuccess(false)
+    setSubmmited(false);
+  }
   const onSubmit = async (data: any, e: any) => {
-    console.log(data);
-    await fetch("https://api.web3forms.com/submit", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        Accept: "application/json",
-      },
-      body: JSON.stringify(data, null, 2),
-    })
-      .then(async (response) => {
-        let json = await response.json();
-        if (json.success) {
-          setIsSuccess(true);
-          setMessage(json.message);
-          e.target.reset();
-          reset();
-        } else {
-          setIsSuccess(false);
-          setMessage(json.message);
-        }
-      })
-      .catch((error) => {
-        setIsSuccess(false);
-        setMessage("Client Error. Please check the console.log for more info");
-        console.log(error);
-      });
+    setSubmmited(true);
+    
+    var templateParams = {
+      name: name,
+      email: email,
+      notes: Message
   };
+   
+  emailjs.send('service_8t1dguf', 'template_9dq3gvs', templateParams)
+      .then(function(response) {
+         console.log('SUCCESS!', response.status, response.text);
+        setIsSuccess(true)
+      }, function(error) {
+         console.log('FAILED...', error);
+      });
+  }
   return (
     <div className="bg-gray-50 dark:bg-neutral-900" id="contact">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 text-center">
-        <h2 className="text-4xl font-bold">Contact</h2>
+        <h2 className="text-4xl font-bold">Contacto</h2>
 
         <p className="pt-6 pb-6 text-base max-w-2xl text-center m-auto dark:text-neutral-400">
-          Want to contact us? Choose an option below and well be happy to show
-          you how Halley can transform her companys web experience.
+          ¿Queres contactarnos? Envianos un mensaje y estaremos felices de <br/> poder conversar contigo.
         </p>
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 pb-16 grid md:grid-cols-2 lg:grid-cols-2 gap-y-8 md:gap-x-8 md:gap-y-8 lg:gap-x-8 lg:gap-y-16">
         <div>
-          <h2 className="text-lg font-bold">Contact Halley</h2>
+          <h2 className="text-lg font-bold">Conversemos</h2>
           <p className="max-w-sm mt-4 mb-4 dark:text-neutral-400">
-            Have something to say? We are here to help. Fill up the form or send
-            email or call phone.
+            Estamos acá para ayudarte. Rellena el formulario o envianos mensaje por WhatsApp.
           </p>
 
           <div className="flex items-center mt-8 space-x-2 text-dark-600 dark:text-neutral-400">
             <MapIcon className="w-4 h-4" />
-            <span>Av Tomas Marsano 700, Lima - Perú</span>
+            <span>Uruguay</span>
           </div>
 
           <div className="flex items-center mt-2 space-x-2 text-dark-600 dark:text-neutral-400">
             <EnvelopeIcon className="w-4 h-4" />
-            <a href="mailto:hello@halley.vercel.app">hello@halley.vercel.app</a>
+            <a href="mailto:hello@halley.vercel.app">algorixuy@gmail.com</a>
           </div>
 
           <div className="flex items-center mt-2 space-x-2 text-dark-600 dark:text-neutral-400">
             <PhoneIcon className="w-4 h-4" />
-            <a href="tel:51931999999">+51 931999999</a>
+            <a href="tel:51931999999">+598 700 911</a>
           </div>
         </div>
 
@@ -112,17 +113,14 @@ export default function Contact() {
               <div className="mb-5">
                 <input
                   type="text"
-                  placeholder="Full Name"
+                  placeholder="Nombre"
                   autoComplete="false"
                   className={`w-full px-4 py-3 border-2 placeholder:text-neutral-800 dark:text-white rounded-md outline-none dark:placeholder:text-neutral-200 dark:bg-neutral-900 focus:ring-4 ${
                     errors.name
                       ? "border-rose-500 focus:border-rose-500 ring-rose-100 dark:ring-0"
                       : "border-neutral-300 focus:border-neutral-600 ring-neutral-100 dark:border-neutral-600 dark:focus:border-white dark:ring-0"
                   }`}
-                  {...register("name", {
-                    required: "Full name is required",
-                    maxLength: 80,
-                  })}
+                 onChange={(e)=>setName(e.target.value)}
                 />
                 {errors.name && (
                   <div className="mt-1 text-rose-500">
@@ -138,7 +136,7 @@ export default function Contact() {
                 <input
                   id="email_address"
                   type="email"
-                  placeholder="Email Address"
+                  placeholder="Tu email"
                   // name="email"
                   autoComplete="false"
                   className={`w-full px-4 py-3 border-2 placeholder:text-neutral-800 dark:text-white rounded-md outline-none dark:placeholder:text-neutral-200 dark:bg-neutral-900   focus:ring-4  ${
@@ -146,13 +144,7 @@ export default function Contact() {
                       ? "border-rose-500 focus:border-rose-500 ring-rose-100 dark:ring-0"
                       : "border-neutral-300 focus:border-neutral-600 ring-neutral-100 dark:border-neutral-600 dark:focus:border-white dark:ring-0"
                   }`}
-                  {...register("email", {
-                    required: "Enter your email",
-                    pattern: {
-                      value: /^\S+@\S+$/i,
-                      message: "Please enter a valid email",
-                    },
-                  })}
+                  onChange={(e)=>setEmail(e.target.value)}
                 />
                 {errors.email && (
                   <div className="mt-1 text-rose-500">
@@ -164,13 +156,13 @@ export default function Contact() {
               <div className="mb-3">
                 <textarea
                   // name="message"
-                  placeholder="Your Message"
+                  placeholder="Deja tu mensaje..."
                   className={`w-full px-4 py-3 border-2 placeholder:text-neutral-800 dark:text-white dark:placeholder:text-neutral-200 dark:bg-neutral-900   rounded-md outline-none  h-36 focus:ring-4  ${
                     errors.message
                       ? "border-rose-500 focus:border-rose-500 ring-rose-100 dark:ring-0"
                       : "border-neutral-300 focus:border-neutral-600 ring-neutral-100 dark:border-neutral-600 dark:focus:border-white dark:ring-0"
                   }`}
-                  {...register("message", { required: "Enter your Message" })}
+                  onChange={(e)=>setMessage(e.target.value)}
                 />
                 {errors.message && (
                   <div className="mt-1 text-rose-500">
@@ -205,13 +197,13 @@ export default function Contact() {
                     ></path>
                   </svg>
                 ) : (
-                  "Send Message"
+                  "Enviar mensaje"
                 )}
               </button>
             </form>
           )}
 
-          {isSubmitSuccessful && isSuccess && (
+          { isSuccess&&submmited && (
             <>
               <div className="flex flex-col items-center justify-center text-center text-white rounded-md">
                 <svg
@@ -235,16 +227,16 @@ export default function Contact() {
                   {Message}
                 </p>
                 <button
-                  className="mt-6 py-2 px-4 bg-rose-500 rounded-full focus:outline-none text-neutral-100"
-                  onClick={() => reset()}
+                  className="mt-6 py-2 px-4 bg-red-500 rounded-full focus:outline-none text-neutral-100"
+                  onClick={() => resetear()}
                 >
-                  Go back
+                  Atrás
                 </button>
               </div>
             </>
           )}
 
-          {isSubmitSuccessful && !isSuccess && (
+          {!isSuccess  && submmited && (
             <div className="flex flex-col items-center justify-center text-center text-neutral-900 dark:text-neutral-300 rounded-md">
               <svg
                 width="97"
@@ -262,7 +254,7 @@ export default function Contact() {
               </svg>
 
               <h3 className=" py-5 text-2xl font-medium text-rose-500">
-                Oops, Something went wrong!
+                ¡Oops, Algo salió mal!
               </h3>
               <p className="text-neutral-900 dark:text-neutral-300 md:px-4">
                 {Message}
@@ -271,7 +263,7 @@ export default function Contact() {
                 className="mt-6 py-2 px-4 bg-rose-500 rounded-full focus:outline-none text-neutral-100"
                 onClick={() => reset()}
               >
-                Try Again
+                Volver a intentar
               </button>
             </div>
           )}

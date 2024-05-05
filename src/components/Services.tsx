@@ -2,57 +2,35 @@ import Image from "next/image";
 
 const services = [
   {
-    title: "Dolorum molestiae",
+    title: "Ecommerce",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit laudantium",
+      "Desde la conceptualización de tu tienda en línea hasta la implementación de estrategias de pago y logística, te ayudamos a llevar tu negocio al mundo digital de manera efectiva y rentable.",
     image: "/images/services/1.svg",
     alt: "Service description",
   },
   {
-    title: "Commodi mollitia",
+    title: "Paginas web",
     description:
-      "Nemo quos doloribus quo omnis mollitia nostrum excepturi impedit veniam ",
+      "Sitios web personalizados que representan la esencia de tu marca. Ya sea que necesites una página informativa elegante o una plataforma interactiva, nuestro enfoque centrado en el usuario garantiza una experiencia web atractiva y funcional.",
     image: "/images/services/2.svg",
     alt: "Service description",
   },
   {
-    title: "Neque numquam",
+    title: "Aplicaciones web",
     description:
-      "Accusantium eius omnis minus debitis est odio earum labore ad itaque mollitia",
+      "Aplicaciones web intuitivas y de alto rendimiento. Nuestros servicios abarcan herramientas empresariales, asegurando que tu audiencia tenga acceso a experiencias web fluidas y eficientes.",
     image: "/images/services/3.svg",
     alt: "Service description",
-  },
-  {
-    title: "Vero animi",
-    description:
-      "Dolores nemo labore soluta incidunt cumque repellat quod ducimus explicabo",
-    image: "/images/services/4.svg",
-    alt: "Service description",
-  },
-  {
-    title: "Repudiandae pariatur",
-    description:
-      "voluptatum ex molestiae quae alias quasi eum magnam maxime autem atque",
-    image: "/images/services/5.svg",
-    alt: "Service description",
-  },
-  {
-    title: "Placeat voluptas",
-    description:
-      "vitae iure impedit magni consequuntur nihil consectetur laboriosam perspiciatis",
-    image: "/images/services/6.svg",
-    alt: "Service description",
-  },
+  }
 ];
 export function Services() {
   return (
     <div className="bg-gray-50 dark:bg-neutral-900" id="services">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 text-center">
-        <h2 className="text-4xl font-bold">What is Halley?</h2>
+        <h2 className="text-4xl font-bold">A un paso del <span className="text-red-700">TOP</span> con nuestras soluciones personalizadas</h2>
 
         <p className="pt-6 pb-6 text-base max-w-2xl text-center m-auto dark:text-neutral-400">
-          Halley is consectetur Obcaecati veniam explicabo perspiciatis sapiente
-          saepe sequi atque aut ullam aliquam.
+          Amamos lo que hacemos, por eso queremos ofrecerte lo mejor del mercado.
         </p>
       </div>
 
