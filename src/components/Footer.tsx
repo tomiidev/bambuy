@@ -4,7 +4,7 @@ import ThemeSwitchOption from "./ThemeSwitchOption";
 const social = [
   {
     name: "instagram",
-    href: "https://www.instagram.com/algorixuy",
+    href: "https://www.instagram.com/bambuy_digital",
     icon: (
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" fill="none">
         <path
@@ -13,22 +13,7 @@ const social = [
         />
       </svg>
     ),
-  },
-
- 
-
-  {
-    name: "linkedin",
-    href: "https://www.linkedin.com/",
-    icon: (
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" fill="none">
-        <path
-          d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"
-          fill="currentColor"
-        />
-      </svg>
-    ),
-  },
+  }
 ];
 
 const column1 = [
@@ -39,11 +24,6 @@ const column1 = [
 ];
 
 
-const column3 = [
-  { name: "Politica de privacidad", href: "/" },
-  { name: "Terminos y condiciones", href: "/" },
-  { name: "Soporte", href: "/" },
-];
 
 export default function Footer() {
   return (
@@ -51,11 +31,11 @@ export default function Footer() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pt-12 pb-12 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-5">
         <div className="col-span-2 sm:col-span-3 md:col-span-3 lg:col-span-2 2xl:col-span-2">
           <Link href="/">
-          ALGORIX
+          BAMBUY DIGITAL
           </Link>
 
           <p className="md:text-sm pt-4 w-auto sm:w-6/12 md:w-6/12 lg:w-8/12">
-            Somos ALGORIX, líderes en la entrega de soluciones digitales innovadoras. Descubrí la diferencia de trabajar con una empresa que prioriza tu éxito. <br/> ¡Construyamos juntos tu futuro digital! 
+            Descubrí la diferencia de trabajar con una empresa que prioriza tu éxito.
           </p>
 
           <div className="flex gap-2 pt-6 sm:pt-6 md:pt-6 lg:pt-12 max-w-[300px]">
@@ -99,23 +79,12 @@ export default function Footer() {
           ))}
         </div> */}
 
-        <div>
-          <h3 className="text-sm md:text-xs font-bold pb-4 pt-12 lg:pt-0">
-            LEGAL
-          </h3>
-          {column3.map((item) => (
-            <Link
-              key={item.name}
-              href={item.href}
-              className="hover:text-rose-500 md:text-sm my-4 grid"
-            >
-              {item.name}
-            </Link>
-          ))}
+        {/* <div>
+          
           <div className="mt-12">
             <ThemeSwitchOption />
           </div>
-        </div>
+        </div> */}
       </div>
 
       <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8 p-6 text-center border-t border-neutral-800">

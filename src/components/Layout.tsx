@@ -9,8 +9,8 @@ const Layout = (props: any) => {
   const { children, ...customMeta } = props;
   const router = useRouter();
   const meta = {
-    title: "Algorix",
-    description: `En ALGORIX conectamos empresas con el futuro digital.`,
+    title: "BAMBUY DIGITAL",
+    description: `En BAMBUY se busca combinar habilidades administrativas con innovaciones tecnologías para potenciar tu negocio.`,
 /*     image: "/images/seo/halley-banner.png", */
     type: "website",
     ...customMeta,

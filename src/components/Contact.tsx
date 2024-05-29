@@ -65,7 +65,7 @@ export default function Contact() {
         <h2 className="text-4xl font-bold">Contacto</h2>
 
         <p className="pt-6 pb-6 text-base max-w-2xl text-center m-auto dark:text-neutral-400">
-          ¿Queres contactarnos? Envianos un mensaje y estaremos felices de <br/> poder conversar contigo.
+          ¿Queres conversar? Enviá un mensaje y estare feliz de <br/> poder conversar contigo.
         </p>
       </div>
 
@@ -73,7 +73,7 @@ export default function Contact() {
         <div>
           <h2 className="text-lg font-bold">Conversemos</h2>
           <p className="max-w-sm mt-4 mb-4 dark:text-neutral-400">
-            Estamos acá para ayudarte. Rellena el formulario o envianos mensaje por WhatsApp.
+            Rellena el formulario o envianos mensaje por WhatsApp.
           </p>
 
           <div className="flex items-center mt-8 space-x-2 text-dark-600 dark:text-neutral-400">
@@ -83,12 +83,12 @@ export default function Contact() {
 
           <div className="flex items-center mt-2 space-x-2 text-dark-600 dark:text-neutral-400">
             <EnvelopeIcon className="w-4 h-4" />
-            <a href="mailto:hello@halley.vercel.app">algorixuy@gmail.com</a>
+            <a href="mailto:hello@halley.vercel.app">bambuydigital@gmail.com</a>
           </div>
 
           <div className="flex items-center mt-2 space-x-2 text-dark-600 dark:text-neutral-400">
             <PhoneIcon className="w-4 h-4" />
-            <a href="tel:51931999999">+598 700 911</a>
+            <a href="tel:51931999999">+598 508 710</a>
           </div>
         </div>
 

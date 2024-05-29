@@ -2,23 +2,30 @@ import Image from "next/image";
 
 const services = [
   {
-    title: "Ecommerce",
+    title: "Tareas administrativas",
     description:
-      "Desde la conceptualización de tu tienda en línea hasta la implementación de estrategias de pago y logística, te ayudamos a llevar tu negocio al mundo digital de manera efectiva y rentable.",
+      "Seguimiento de ventas, armado de presupuestos, gestión de emails, gestión de agenda, etc.",
     image: "/images/services/1.svg",
     alt: "Service description",
   },
   {
-    title: "Paginas web",
+    title: "Desarrollo web/app",
     description:
-      "Sitios web personalizados que representan la esencia de tu marca. Ya sea que necesites una página informativa elegante o una plataforma interactiva, nuestro enfoque centrado en el usuario garantiza una experiencia web atractiva y funcional.",
+      "Desarrollo de ecommerce, landing pages, apps como también automatizaciones que requiera y potencie el negocio.",
     image: "/images/services/2.svg",
     alt: "Service description",
   },
   {
-    title: "Aplicaciones web",
+    title: "Diseño gráfico",
     description:
-      "Aplicaciones web intuitivas y de alto rendimiento. Nuestros servicios abarcan herramientas empresariales, asegurando que tu audiencia tenga acceso a experiencias web fluidas y eficientes.",
+      "Diseño de catalogos, flyers, etc.",
+    image: "/images/services/3.svg",
+    alt: "Service description",
+  },
+  {
+    title: "Atención al cliente",
+    description:
+      "Respuestas a mensajes a través de redes sociales con 48 hs de retraso como máximo (siempre y cuando cuente con el conocimiento para dar respuesta).",
     image: "/images/services/3.svg",
     alt: "Service description",
   }
@@ -30,7 +37,7 @@ export function Services() {
         <h2 className="text-4xl font-bold">A un paso del <span className="text-red-700">TOP</span> con nuestras soluciones personalizadas</h2>
 
         <p className="pt-6 pb-6 text-base max-w-2xl text-center m-auto dark:text-neutral-400">
-          Amamos lo que hacemos, por eso queremos ofrecerte lo mejor del mercado.
+         
         </p>
       </div>
 

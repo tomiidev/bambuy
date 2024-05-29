@@ -3,9 +3,9 @@ import { ChevronDownIcon } from "@heroicons/react/24/solid";
 
 const faqitems = [
   {
-    question: "¿Qué tipo de empresas se benefician más de sus servicios de eCommerce?",
+    question: "¿Qué tipo de empresas se benefician más de estos servicios?",
     response:
-      "Nuestros servicios de eCommerce son versátiles y adecuados para una amplia gama de empresas, desde startups hasta empresas consolidadas. Nos adaptamos a tus necesidades específicas, ya sea que estés comenzando tu presencia en línea o buscando optimizar una tienda existente.",
+      "Mis servicios son versátiles y adecuados para una amplia gama de empresas, desde startups hasta empresas consolidadas. Ya sea que estés comenzando tu presencia en línea o buscando optimizar una tienda existente.",
   },
   {
     question: "¿Cómo personalizan las soluciones para adaptarse a las necesidades únicas de mi empresa?",
@@ -13,14 +13,19 @@ const faqitems = [
       "Entendemos que cada empresa es única. Nuestro enfoque de personalización se basa en una evaluación detallada de tus requisitos. Ya sea en el diseño de una página web, el desarrollo de una aplicación o la implementación de un sistema CRM, adaptamos nuestras soluciones para satisfacer tus objetivos específicos.",
   },
   {
-    question: "¿Cómo garantizan la seguridad de la información en sus servicios de CRM?",
+    question: "¿Qué ventajas ofrece la administración online?",
     response:
-      "La seguridad es nuestra máxima prioridad. Implementamos prácticas de seguridad de vanguardia en todas nuestras soluciones. Nuestros servicios de CRM incluyen medidas de cifrado, gestión de accesos y copias de seguridad regulares para garantizar la protección integral de la información crítica de tu empresa.",
+      "La administración online ofrece flexibilidad, eficiencia y ahorro de tiempo. Permite gestionar operaciones desde cualquier lugar y mejora la comunicación con el equipo, adaptándose a las demandas del mercado actual.",
   },
   {
-    question: "¿Ofrecen soporte técnico continuo después de la implementación de sus servicios?",
+    question: "¿Cómo puede el desarrollo de software mejorar mi negocio?",
     response:
-      "Sí, nuestro compromiso no se detiene con la implementación. Ofrecemos un sólido servicio de soporte técnico para abordar cualquier pregunta o problema que puedas tener. Estamos acá para asegurarnos de que aproveches al máximo nuestras soluciones.",
+      "El desarrollo de software optimiza procesos, automatiza tareas repetitivas y mejora la precisión. Facilita la gestión de datos y recursos, aumentando la eficiencia operativa y permitiendo una toma de decisiones más informada y rápida.",
+  },
+  {
+    question: "¿Qué tipos de servicios administrativos ofrecen?",
+    response:
+      "Ofrecemos una amplia gama de servicios administrativos, incluyendo la gestión de correos electrónicos, organización de documentos, administración de proyectos, elaboración de informes y presentaciones, contabilidad básica, y más.",
   },
 ];
 

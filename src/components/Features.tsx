@@ -29,7 +29,7 @@ const contents = [
   {
     title: "Soporte",
     description:
-      "En el núcleo de nuestra oferta, se encuentra nuestro compromiso con un soporte excepcional, diseñado para impulsar tu éxito y tranquilidad.",
+      "En el núcleo de la oferta, se encuentra mi compromiso con un soporte excepcional, diseñado para impulsar tu éxito y tranquilidad.",
     features: [
       "Asistencia personalizada",
       "Tiempo de respuesta rápido",
@@ -44,9 +44,9 @@ export function Features() {
   return (
     <div className="bg-white dark:bg-neutral-900" id="features">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 gap-x-40 pt-16 pb-16">
-        <h2 className="text-4xl font-bold text-center">Digitalizate</h2>
+        <h2 className="text-4xl font-bold text-center">Potencia tu éxito</h2>
         <p className="pt-6 text-base max-w-2xl text-center m-auto dark:text-neutral-400">
-        Transforma tu futuro empresarial hoy mismo: ¡Digitalízate y lleva tu empresa al siguiente nivel de innovación y eficiencia!
+        
         </p>
 
         {contents.map((content) => (
