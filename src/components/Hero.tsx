@@ -27,11 +27,12 @@ export function Hero() {
 
         <div className="flex items-center mt-12">
           <Image
-            src="/images/hero/hero.svg"
+            src="/images/hero/yo.png"
             alt="Image hero description"
-            width={1025}
+            width={400}
             height={662}
             quality={75}
+            style={{borderRadius:"20px", transform:"rotate(3deg)"}}
             sizes="100vw"
             priority
           />
