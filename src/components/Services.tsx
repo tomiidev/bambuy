@@ -5,28 +5,28 @@ const services = [
     title: "Tareas administrativas",
     description:
       "Seguimiento de ventas, armado de presupuestos, gestión de emails, gestión de agenda, etc.",
-    image: "/images/services/1.svg",
+    image: "/images/services/admin.svg",
     alt: "Service description",
   },
   {
     title: "Desarrollo web/app",
     description:
       "Desarrollo de ecommerce, landing pages, apps como también automatizaciones que requiera y potencie el negocio.",
-    image: "/images/services/2.svg",
+    image: "/images/services/ecommerce.svg",
     alt: "Service description",
   },
   {
     title: "Diseño gráfico",
     description:
       "Diseño de catalogos, flyers, etc.",
-    image: "/images/services/3.svg",
+    image: "/images/services/design.svg",
     alt: "Service description",
   },
   {
     title: "Atención al cliente",
     description:
       "Respuestas a mensajes a través de redes sociales con 48 hs de retraso como máximo (siempre y cuando cuente con el conocimiento para dar respuesta).",
-    image: "/images/services/3.svg",
+    image: "/images/services/support.svg",
     alt: "Service description",
   }
 ];
@@ -34,7 +34,7 @@ export function Services() {
   return (
     <div className="bg-gray-50 dark:bg-neutral-900" id="services">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 text-center">
-        <h2 className="text-4xl font-bold">A un paso del <span className="text-red-700">TOP</span> con nuestras soluciones personalizadas</h2>
+        <h2 className="text-4xl font-bold"><span className="text-orange-300">Crece </span>sin límites</h2>
 
         <p className="pt-6 pb-6 text-base max-w-2xl text-center m-auto dark:text-neutral-400">
          

@@ -8,9 +8,9 @@ const faqitems = [
       "Mis servicios son versátiles y adecuados para una amplia gama de empresas, desde startups hasta empresas consolidadas. Ya sea que estés comenzando tu presencia en línea o buscando optimizar una tienda existente.",
   },
   {
-    question: "¿Cómo personalizan las soluciones para adaptarse a las necesidades únicas de mi empresa?",
+    question: "¿Cómo personalizas las soluciones para adaptarse a las necesidades únicas de mi empresa?",
     response:
-      "Entendemos que cada empresa es única. Nuestro enfoque de personalización se basa en una evaluación detallada de tus requisitos. Ya sea en el diseño de una página web, el desarrollo de una aplicación o la implementación de un sistema CRM, adaptamos nuestras soluciones para satisfacer tus objetivos específicos.",
+      "Cada empresa es única. Nuestro enfoque de personalización se basa en una evaluación detallada de tus requisitos. Ya sea en el diseño de una página web, el desarrollo de una aplicación o la implementación de un sistema CRM, adaptamos nuestras soluciones para satisfacer tus objetivos específicos.",
   },
   {
     question: "¿Qué ventajas ofrece la administración online?",
@@ -23,9 +23,9 @@ const faqitems = [
       "El desarrollo de software optimiza procesos, automatiza tareas repetitivas y mejora la precisión. Facilita la gestión de datos y recursos, aumentando la eficiencia operativa y permitiendo una toma de decisiones más informada y rápida.",
   },
   {
-    question: "¿Qué tipos de servicios administrativos ofrecen?",
+    question: "¿Qué tipos de servicios administrativos ofreces",
     response:
-      "Ofrecemos una amplia gama de servicios administrativos, incluyendo la gestión de correos electrónicos, organización de documentos, administración de proyectos, elaboración de informes y presentaciones, contabilidad básica, y más.",
+      "Cuento con una amplia gama de servicios administrativos, incluyendo la gestión de correos electrónicos, organización de documentos, administración de proyectos, elaboración de informes y presentaciones, contabilidad básica, y más.",
   },
 ];
 

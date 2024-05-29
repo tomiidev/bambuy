@@ -32,7 +32,10 @@ export function Hero() {
             width={400}
             height={662}
             quality={75}
-            style={{borderRadius:"20px", transform:"rotate(3deg)"}}
+            style={{
+              borderRadius: '20px',
+              transform:"rotate(3deg)"
+            }}
             sizes="100vw"
             priority
           />

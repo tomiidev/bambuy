@@ -14,22 +14,11 @@ const contents = [
     image: "/images/features/dashboard.svg",
     order: false,
   },
-  {
-    title: "Interfaz de usuario intuitiva",
-    description:
-      "Pensamos la solución en su totalidad para que sea lo mas amena posible al trabajo diario o vista diaria.",
-    features: [
-      "Navegación sencilla",
-      "Flujo de trabajo eficiente",
-      "Interfaz moderna",
-    ],
-    image: "/images/features/product.svg",
-    order: true,
-  },
+
   {
     title: "Soporte",
     description:
-      "En el núcleo de la oferta, se encuentra mi compromiso con un soporte excepcional, diseñado para impulsar tu éxito y tranquilidad.",
+      "En el núcleo de la oferta, se encuentra mi compromiso con un soporte excepcional, único para impulsar tu éxito y tranquilidad.",
     features: [
       "Asistencia personalizada",
       "Tiempo de respuesta rápido",
