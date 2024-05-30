@@ -88,7 +88,7 @@ export default function Contact() {
 
           <div className="flex items-center mt-2 space-x-2 text-dark-600 dark:text-neutral-400">
             <PhoneIcon className="w-4 h-4" />
-            <a href="tel:51931999999">+598 508 710</a>
+            <a href="">+598 700 911</a>
           </div>
         </div>
 

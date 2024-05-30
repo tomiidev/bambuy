@@ -38,7 +38,7 @@ const contents = [
       "Mejora en la satisfacción del cliente",
 
     ],
-    image: "/images/features/dev.svg",
+    image: "/images/features/support.svg",
     order: false,
   },
 ];
