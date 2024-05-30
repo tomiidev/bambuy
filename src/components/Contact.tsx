@@ -65,7 +65,7 @@ export default function Contact() {
         <h2 className="text-4xl font-bold">Contacto</h2>
 
         <p className="pt-6 pb-6 text-base max-w-2xl text-center m-auto dark:text-neutral-400">
-          ¿Queres conversar? Enviá un mensaje y estare feliz de <br/> poder conversar contigo.
+          ¿Queres conversar? Enviá un mensaje y estare feliz de  poder conversar contigo.
         </p>
       </div>
 

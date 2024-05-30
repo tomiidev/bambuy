@@ -32,6 +32,7 @@ export function Hero() {
             width={400}
             height={662}
             quality={75}
+            className="w-60 mx-auto sm:full"
             style={{
               borderRadius: '20px',
               transform:"rotate(3deg)"

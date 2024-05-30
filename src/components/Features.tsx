@@ -3,28 +3,42 @@ import { CheckIcon } from "@heroicons/react/24/solid";
 
 const contents = [
   {
-    title: "Personalización",
+    title: "Los beneficios de la administración online",
     description:
-      "Sumergite en una experiencia adaptada a tus preferencias.",
+      "La administración online ofrece flexibilidad, eficiencia y ahorro de tiempo. Permite gestionar operaciones desde cualquier lugar y mejora la comunicación con el equipo.",
     features: [
-      "Configuración a medida",
-      "Contenido relevante en tiempo real",
-      "Flujo de trabajo personalizable",
+      "Reducción de costos operativos",
+      "Mayor productividad",
+    
     ],
-    image: "/images/features/dashboard.svg",
+    image: "/images/features/admin.svg",
     order: false,
   },
 
   {
-    title: "Soporte",
+    title: "Desarrollo de software en la administración",
     description:
-      "En el núcleo de la oferta, se encuentra mi compromiso con un soporte excepcional, único para impulsar tu éxito y tranquilidad.",
+      "El desarrollo de software en la administración optimiza procesos, automatiza tareas repetitivas y mejora la precisión. Facilita la gestión de datos y recursos, aumentando la eficiencia operativa y permitiendo una toma de decisiones más informada y rápida.",
     features: [
-      "Asistencia personalizada",
-      "Tiempo de respuesta rápido",
+      "Automatización de procesos",
+      "Personalización y escalabilidad",
+      "Seguridad de datos",
+      "Integración de sistemas",
 
     ],
-    image: "/images/features/inventory.svg",
+    image: "/images/features/dev.svg",
+    order: true,
+  },
+  {
+    title: "Soporte 24/7",
+    description:
+      "Disponibilidad constante para cualquier consulta y resolución de problemas, tu mano derecha en todo momento.",
+    features: [
+      "Disponibilidad constante",
+      "Mejora en la satisfacción del cliente",
+
+    ],
+    image: "/images/features/dev.svg",
     order: false,
   },
 ];

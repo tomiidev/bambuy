@@ -31,7 +31,7 @@ export default function Navbar() {
               <div className="flex flex-1 items-center justify-start">
                 <div className="flex flex-shrink-0 items-center md:pl-0">
                   <Link href="/">
-                 ALGORIX
+                 BAMBUY
                   </Link>
                 </div>
 
