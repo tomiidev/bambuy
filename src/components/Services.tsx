@@ -30,7 +30,7 @@ const services = [
     alt: "Service description",
   },
   {
-    title: "Community manager",
+    title: "Gestión de redes",
     description:
       "Planificación y diseño de publicaciones para Facebook, Instangram, LinkedIn y Mercado Libre (se usaran la/s que mas se adapte/n a tu negocio). Gestión total de las redes exceptuando la publicidad. ",
     image: "/images/services/cm.svg",
