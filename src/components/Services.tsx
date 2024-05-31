@@ -28,6 +28,13 @@ const services = [
       "Respuestas a mensajes a través de redes sociales con 48 hs de retraso como máximo (siempre y cuando cuente con el conocimiento para dar respuesta).",
     image: "/images/services/support.svg",
     alt: "Service description",
+  },
+  {
+    title: "Community manager",
+    description:
+      "Planificación y diseño de publicaciones para Facebook, Instangram, LinkedIn y Mercado Libre (se usaran la/s que mas se adapte/n a tu negocio). Gestión total de las redes exceptuando la publicidad. ",
+    image: "/images/services/cm.svg",
+    alt: "Service description",
   }
 ];
 export function Services() {
