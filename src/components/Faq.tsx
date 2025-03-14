@@ -5,12 +5,12 @@ const faqitems = [
   {
     question: "¿Qué tipo de empresas se benefician más de estos servicios?",
     response:
-      "Mis servicios son versátiles y adecuados para una amplia gama de empresas, desde startups hasta empresas consolidadas. Ya sea que estés comenzando tu presencia en línea o buscando optimizar un negocio existente.",
+      "Nuestros servicios son versátiles y adecuados para una amplia gama de empresas, desde startups hasta empresas consolidadas. Ya sea que estés comenzando tu presencia en línea o buscando optimizar un negocio existente.",
   },
   {
     question: "¿Cómo se personalizan las soluciones para adaptarse a las necesidades únicas de mi empresa?",
     response:
-      "Cada empresa es única. El enfoque de personalización se basa en una evaluación detallada de tus requisitos. Ya sea en el diseño de una página web, el desarrollo de una aplicación o la implementación de un sistema CRM, se adaptan las soluciones para satisfacer tus objetivos específicos.",
+      "Cada empresa es única. El enfoque de personalización se basa en una evaluación detallada de tus requisitos. Ya sea en el diseño de una página web, el desarrollo de una aplicación web, etc. Se adaptan las soluciones para satisfacer tus objetivos específicos.",
   },
   {
     question: "¿Qué ventajas ofrece la administración online?",
@@ -23,10 +23,10 @@ const faqitems = [
       "El desarrollo de software optimiza procesos, automatiza tareas repetitivas y mejora la precisión. Facilita la gestión de datos y recursos, aumentando la eficiencia operativa y permitiendo una toma de decisiones más informada y rápida.",
   },
   {
-    question: "¿Qué tipos de servicios administrativos se ofrecen?",
-    response:
-      "Se ofrcen una amplia gama de servicios administrativos, incluyendo la gestión de correos electrónicos, organización de documentos, administración de proyectos, elaboración de informes y presentaciones, contabilidad básica, y más.",
-  },
+    "question": "¿Qué tipos de servicios administrativos se ofrecen?",
+    "response": "Ofrecemos una amplia variedad de servicios administrativos para optimizar la gestión de tu negocio. Entre ellos se incluyen la gestión y organización de emails, administración de documentos, coordinación de proyectos, elaboración de informes y presentaciones, contabilidad básica, atención al cliente y mucho más. Nos adaptamos a tus necesidades para que puedas enfocarte en hacer crecer tu empresa."
+}
+
 ];
 
 export default function Faq() {
@@ -42,7 +42,7 @@ export default function Faq() {
       <p className="pt-6 pb-16 text-base max-w-2xl text-center m-auto dark:text-neutral-400">
         ¿Tenes alguna de estas dudas?
       </p>
-      <div className="mx-auto w-full max-w-2xl rounded-2xl bg-transparent dark:bg-transparent">
+      <div className="mx-auto w-full max-w-6xl rounded-2xl bg-transparent dark:bg-transparent">
         {faqitems.map(({ question, response }) => (
           <div key={question}>
             <Disclosure>

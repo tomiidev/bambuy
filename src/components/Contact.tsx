@@ -65,7 +65,7 @@ export default function Contact() {
         <h2 className="text-4xl font-bold">Contacto</h2>
 
         <p className="pt-6 pb-6 text-base max-w-2xl text-center m-auto dark:text-neutral-400">
-          ¿Queres conversar? Enviá un mensaje y estare feliz de  poder conversar contigo.
+          ¿Queres conversar? Enviá tu consulta.
         </p>
       </div>
 
@@ -88,7 +88,7 @@ export default function Contact() {
 
           <div className="flex items-center mt-2 space-x-2 text-dark-600 dark:text-neutral-400">
             <PhoneIcon className="w-4 h-4" />
-            <a href="">+598 700 911</a>
+            <a href="">+598 508 710</a>
           </div>
         </div>
 
